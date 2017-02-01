@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/release/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/root/.android/build-cache/9ea0b75fc2326bc53bb213f96b92ebdf12f9621b/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/release/drawable-v21/design_bottom_navigation_item_background.xml",
+        "source": "/root/.android/build-cache/9925213b2b14ce07da33278f782575f28b013668/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/release/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/root/.android/build-cache/9ea0b75fc2326bc53bb213f96b92ebdf12f9621b/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/release/drawable-v21/abc_edit_text_material.xml",
+        "source": "/root/.android/build-cache/9ea0b75fc2326bc53bb213f96b92ebdf12f9621b/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/release/drawable-v21/notification_action_background.xml",
+        "source": "/root/.android/build-cache/9ea0b75fc2326bc53bb213f96b92ebdf12f9621b/output/res/drawable-v21/notification_action_background.xml"
+    }
+]

@@ -1,0 +1,7 @@
+#Tue Dec 20 16:29:02 WIB 2016
+base.0=/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/transforms/dex/debug/folders/1000/5/main_slice_jar
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/transforms/dex/debug/folders/1000/5/main_sliceb_jar/classes.dex
+base.1=/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/transforms/dex/debug/folders/1000/5/main_sliceb_jar
+file.0=/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/transforms/dex/debug/folders/1000/5/main_slice_jar/classes.dex

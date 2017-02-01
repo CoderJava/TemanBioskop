@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android">
+    <selector>
+        <item>
+            <shape
+                android:shape="rectangle"
+                >
+                <corners
+                    android:topLeftRadius="@dimen/corner_radius_form_input_nama_kota"
+                    android:topRightRadius="@dimen/corner_radius_form_input_nama_kota"
+                    android:bottomRightRadius="@dimen/corner_radius_form_input_nama_kota"
+                    android:bottomLeftRadius="@dimen/corner_radius_form_input_nama_kota"
+                    />
+                <solid
+                    android:color="@color/colorBackgroundBlack"
+                    />
+            </shape>
+        </item>
+    </selector>
+</inset>

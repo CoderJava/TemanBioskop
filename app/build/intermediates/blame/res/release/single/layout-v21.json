@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/root/.android/build-cache/9ea0b75fc2326bc53bb213f96b92ebdf12f9621b/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/root/.android/build-cache/9ea0b75fc2326bc53bb213f96b92ebdf12f9621b/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/release/layout-v21/notification_action.xml",
+        "source": "/root/.android/build-cache/9ea0b75fc2326bc53bb213f96b92ebdf12f9621b/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/root/.android/build-cache/9ea0b75fc2326bc53bb213f96b92ebdf12f9621b/output/res/layout-v21/notification_template_custom_big.xml"
+    }
+]

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/transforms/instantRunSlicer/debug/jars/1/1a/dependencies.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b9f04ef880b13bfb677dd9533105d6d9d290ff73">
+        <dex dex="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/transforms/dex/debug/folders/1000/1a/dependencies_2c5a96ab6617598ae8bfda8ba72e229be0e64b6a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/transforms/instantRunSlicer/debug/jars/1/5/main_sliceb.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="28d4c65d048b509b4789943c003433c54b199145">
+        <dex dex="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/transforms/dex/debug/folders/1000/5/main_sliceb_jar/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/transforms/instantRunSlicer/debug/jars/1/5/main_slice.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9d9f0b2f4fdb880bb90ed7cf21b1b3e48ba2b441">
+        <dex dex="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/transforms/dex/debug/folders/1000/5/main_slice_jar/classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/release/mipmap-xxhdpi/ic_launcher2.png",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/mipmap-xxhdpi/ic_launcher2.png"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/release/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    }
+]

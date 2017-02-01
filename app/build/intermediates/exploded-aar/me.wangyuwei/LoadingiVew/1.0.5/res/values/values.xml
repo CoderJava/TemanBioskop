@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="loading_pink">#F04D61</color>
+    <color name="loading_yellow">#F6B965</color>
+    <declare-styleable name="BezierLoadingView"><attr format="dimension" name="lv_external_radius"/><attr format="dimension" name="lv_internal_radius"/><attr format="integer" name="lv_duration"/><attr format="color" name="lv_start_color"/><attr format="color" name="lv_end_color"/></declare-styleable>
+    <string name="app_name">LoadingView</string>
+</resources>

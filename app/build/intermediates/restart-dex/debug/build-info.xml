@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="25"
+    density="hdpi"
+    format="9"
+    plugin-version="2.3.0-alpha2"
+    timestamp="1101975662567"
+    token="1407799113435530492"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="1549" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="396" />
+    <task
+        name="verifier"
+        duration="0" />
+
+    <artifact
+        location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/dependencies_2c5a96ab6617598ae8bfda8ba72e229be0e64b6a.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/outputs/apk/app-debug.apk"
+        type="SPLIT_MAIN" />
+
+    <build
+        timestamp="1101975662567"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/split-apk/debug/dependencies_2c5a96ab6617598ae8bfda8ba72e229be0e64b6a.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+
+</instant-run>

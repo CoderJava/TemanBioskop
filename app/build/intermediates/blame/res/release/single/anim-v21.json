@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/release/anim-v21/design_appbar_state_list_animator.xml",
+        "source": "/root/.android/build-cache/9925213b2b14ce07da33278f782575f28b013668/output/res/anim-v21/design_appbar_state_list_animator.xml"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/release/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/root/.android/build-cache/9925213b2b14ce07da33278f782575f28b013668/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/release/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/root/.android/build-cache/9925213b2b14ce07da33278f782575f28b013668/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    }
+]
