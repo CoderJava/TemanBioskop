@@ -8,6 +8,7 @@
         android:minSdkVersion="17"
         android:targetSdkVersion="25" />
 
+    <!-- Required permission for App measurement to run. -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Optional permission for App measurement to run. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -25,9 +26,13 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="ysn.temanbioskop.activity.JadwalBioskopActivity" />
-        <activity android:name="ysn.temanbioskop.activity.AboutActivity" />
-        <activity android:name="ysn.temanbioskop.MainActivity" />
+        <activity android:name="ysn.temanbioskop.views.activity.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

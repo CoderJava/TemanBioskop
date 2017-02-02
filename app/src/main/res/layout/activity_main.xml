@@ -1,10 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="ysn.temanbioskop.MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-</android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/relative_layout_activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="ysn.temanbioskop.views.activity.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image_view_background_activity_main"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background_home"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.8"
+            android:background="#000000"></RelativeLayout>
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar_activity_main"
+            android:background="@android:color/transparent"
+            android:layout_alignParentTop="true"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image_view_icon_app_activity_main"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_launcher2"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:scaleType="fitStart"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name2"
+                    android:textSize="15sp"
+                    android:layout_toEndOf="@+id/image_view_icon_app_activity_main"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/darker_gray"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab_layout_menu_activity_main"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            >
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view_pager_menu_activity_main"
+            android:layout_below="@+id/toolbar_activity_main"
+            ></android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+
+</layout>
