@@ -4,6 +4,10 @@
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/anim/abc_slide_out_top.xml"
     },
     {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/anim/slide_in_bottom.xml",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/anim/slide_in_bottom.xml"
+    },
+    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/anim/abc_fade_out.xml"
     },
@@ -14,6 +18,10 @@
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/anim/zoom_exit.xml",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/anim/zoom_exit.xml"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/anim/slide_out_up.xml",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/anim/slide_out_up.xml"
     },
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",

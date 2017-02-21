@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Popular Movie Fragment"
+        android:text="@string/popular_movie_fragment"
         android:textColor="@android:color/white"
         android:layout_centerInParent="true"
         />

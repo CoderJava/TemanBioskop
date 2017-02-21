@@ -10,78 +10,148 @@
         tools:context="ysn.temanbioskop.views.activity.MainActivity" android:tag="layout/activity_main_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
 
         <ImageView
+            android:id="@+id/image_view_background_activity_main"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/image_view_background_activity_main"
             android:layout_centerInParent="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/background_home"
-            />
+            android:src="@drawable/background_home" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:alpha="0.8"
-            android:background="#000000"></RelativeLayout>
+            android:background="@color/colorBlack"></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:alpha="0.15"
+            android:background="@android:color/darker_gray"></RelativeLayout>
 
         <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_activity_main"
             android:layout_width="wrap_content"
             android:layout_height="?attr/actionBarSize"
-            android:id="@+id/toolbar_activity_main"
-            android:background="@android:color/transparent"
             android:layout_alignParentTop="true"
-            app:contentInsetLeft="0dp"
-            app:contentInsetStart="0dp"
-            app:contentInsetRight="0dp"
+            android:background="@android:color/transparent"
             app:contentInsetEnd="0dp"
-            >
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/image_view_icon_app_activity_main"
                     android:layout_width="30dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/image_view_icon_app_activity_main"
                     android:layout_centerVertical="true"
-                    android:src="@mipmap/ic_launcher2"
-                    android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
                     android:scaleType="fitStart"
-                    />
+                    android:src="@mipmap/ic_launcher2" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/app_name2"
-                    android:textSize="15sp"
-                    android:layout_toEndOf="@+id/image_view_icon_app_activity_main"
                     android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/image_view_icon_app_activity_main"
+                    android:text="@string/app_name2"
                     android:textColor="@android:color/darker_gray"
-                    />
+                    android:textSize="15sp" />
 
             </RelativeLayout>
 
         </android.support.v7.widget.Toolbar>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.15"
+            android:background="@android:color/darker_gray"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_footer_activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/text_view_do_you"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="8dp"
+                android:text="Do you have an account?"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/text_view_or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_do_you"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:gravity="left"
+                android:paddingBottom="8dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:text=" or "
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/text_view_sign_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_do_you"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/text_view_or"
+                android:layout_toStartOf="@+id/text_view_or"
+                android:paddingBottom="9dp"
+                android:paddingTop="3dp"
+                android:text="Sign In"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_view_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_do_you"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/text_view_or"
+                android:layout_toRightOf="@+id/text_view_or"
+                android:paddingBottom="9dp"
+                android:paddingTop="3dp"
+                android:text="Sign Up"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
         <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout_menu_activity_main"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tab_layout_menu_activity_main"
             android:layout_alignParentEnd="true"
-            android:background="@android:color/transparent"
-            >
-        </android.support.design.widget.TabLayout>
+            android:background="@android:color/transparent"></android.support.design.widget.TabLayout>
 
         <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager_menu_activity_main"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/view_pager_menu_activity_main"
             android:layout_below="@+id/toolbar_activity_main"
-            ></android.support.v4.view.ViewPager>
+            android:layout_above="@+id/relative_layout_footer_activity_main"></android.support.v4.view.ViewPager>
 
     </RelativeLayout>
 

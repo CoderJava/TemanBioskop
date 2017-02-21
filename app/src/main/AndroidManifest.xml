@@ -11,9 +11,11 @@
         <activity android:name=".views.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".views.fragment.home.check_movie_today.CheckMovieTodayActivity"></activity>
     </application>
 
 </manifest>

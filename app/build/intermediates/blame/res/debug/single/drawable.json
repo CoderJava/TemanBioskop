@@ -12,6 +12,10 @@
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_btn_colored_material.xml"
     },
     {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/pict1_poster.jpg",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/pict1_poster.jpg"
+    },
+    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_tab_indicator_material.xml"
     },
@@ -20,24 +24,52 @@
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/pict2_backdrops.jpg",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/pict2_backdrops.jpg"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/pict6_poster.jpg",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/pict6_poster.jpg"
+    },
+    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/pict5_poster.jpg",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/pict5_poster.jpg"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/pict3_poster.jpg",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/pict3_poster.jpg"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/pict2_poster.jpg",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/pict2_poster.jpg"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/pict4_poster.jpg",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/pict4_poster.jpg"
     },
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_item_background_holo_light.xml"
     },
     {
-        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
-        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_seekbar_track_material.xml"
-    },
-    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/notification_tile_bg.xml"
     },
     {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_seekbar_track_material.xml"
+    },
+    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/pict5_backdrops.jpg",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/pict5_backdrops.jpg"
     },
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/design_bottom_navigation_item_background.xml",
@@ -54,6 +86,10 @@
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_light.xml",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/drawable/common_plus_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/pict4_backdrops.jpg",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/pict4_backdrops.jpg"
     },
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
@@ -82,6 +118,14 @@
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/pict3_backdrops.jpg",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/pict3_backdrops.jpg"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/background_submenu_fragment_home.xml",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/background_submenu_fragment_home.xml"
     },
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
@@ -128,6 +172,10 @@
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
     {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/pict1_backdrops.jpg",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/pict1_backdrops.jpg"
+    },
+    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_dark.xml",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/drawable/common_plus_signin_btn_icon_dark.xml"
     },
@@ -144,12 +192,12 @@
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
-        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_clear_material.xml"
-    },
-    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_clear_material.xml"
     },
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
@@ -202,6 +250,10 @@
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/icon_app.png",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/icon_app.png"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/background_text_view_check_list_movie_today.xml",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/background_text_view_check_list_movie_today.xml"
     },
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_light.xml",

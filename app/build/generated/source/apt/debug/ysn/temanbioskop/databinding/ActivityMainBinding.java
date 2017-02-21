@@ -12,14 +12,24 @@ public class ActivityMainBinding extends android.databinding.ViewDataBinding  {
         sViewsWithIds.put(R.id.image_view_background_activity_main, 1);
         sViewsWithIds.put(R.id.toolbar_activity_main, 2);
         sViewsWithIds.put(R.id.image_view_icon_app_activity_main, 3);
-        sViewsWithIds.put(R.id.tab_layout_menu_activity_main, 4);
-        sViewsWithIds.put(R.id.view_pager_menu_activity_main, 5);
+        sViewsWithIds.put(R.id.relative_layout_footer_activity_main, 4);
+        sViewsWithIds.put(R.id.text_view_do_you, 5);
+        sViewsWithIds.put(R.id.text_view_or, 6);
+        sViewsWithIds.put(R.id.text_view_sign_in, 7);
+        sViewsWithIds.put(R.id.text_view_sign_up, 8);
+        sViewsWithIds.put(R.id.tab_layout_menu_activity_main, 9);
+        sViewsWithIds.put(R.id.view_pager_menu_activity_main, 10);
     }
     // views
     public final android.widget.ImageView imageViewBackgroundActivityMain;
     public final android.widget.ImageView imageViewIconAppActivityMain;
     public final android.widget.RelativeLayout relativeLayoutActivityMain;
+    public final android.widget.RelativeLayout relativeLayoutFooterActivityMain;
     public final android.support.design.widget.TabLayout tabLayoutMenuActivityMain;
+    public final android.widget.TextView textViewDoYou;
+    public final android.widget.TextView textViewOr;
+    public final android.widget.TextView textViewSignIn;
+    public final android.widget.TextView textViewSignUp;
     public final android.support.v7.widget.Toolbar toolbarActivityMain;
     public final android.support.v4.view.ViewPager viewPagerMenuActivityMain;
     // variables
@@ -29,14 +39,19 @@ public class ActivityMainBinding extends android.databinding.ViewDataBinding  {
 
     public ActivityMainBinding(android.databinding.DataBindingComponent bindingComponent, View root) {
         super(bindingComponent, root, 0);
-        final Object[] bindings = mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds);
+        final Object[] bindings = mapBindings(bindingComponent, root, 11, sIncludes, sViewsWithIds);
         this.imageViewBackgroundActivityMain = (android.widget.ImageView) bindings[1];
         this.imageViewIconAppActivityMain = (android.widget.ImageView) bindings[3];
         this.relativeLayoutActivityMain = (android.widget.RelativeLayout) bindings[0];
         this.relativeLayoutActivityMain.setTag(null);
-        this.tabLayoutMenuActivityMain = (android.support.design.widget.TabLayout) bindings[4];
+        this.relativeLayoutFooterActivityMain = (android.widget.RelativeLayout) bindings[4];
+        this.tabLayoutMenuActivityMain = (android.support.design.widget.TabLayout) bindings[9];
+        this.textViewDoYou = (android.widget.TextView) bindings[5];
+        this.textViewOr = (android.widget.TextView) bindings[6];
+        this.textViewSignIn = (android.widget.TextView) bindings[7];
+        this.textViewSignUp = (android.widget.TextView) bindings[8];
         this.toolbarActivityMain = (android.support.v7.widget.Toolbar) bindings[2];
-        this.viewPagerMenuActivityMain = (android.support.v4.view.ViewPager) bindings[5];
+        this.viewPagerMenuActivityMain = (android.support.v4.view.ViewPager) bindings[10];
         setRootTag(root);
         // listeners
         invalidateAll();
