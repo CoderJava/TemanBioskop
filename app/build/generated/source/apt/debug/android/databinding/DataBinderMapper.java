@@ -9,6 +9,8 @@ class DataBinderMapper {
         switch(layoutId) {
                 case ysn.temanbioskop.R.layout.activity_main:
                     return ysn.temanbioskop.databinding.ActivityMainBinding.bind(view, bindingComponent);
+                case ysn.temanbioskop.R.layout.fragment_check_movie_today:
+                    return ysn.temanbioskop.databinding.FragmentCheckMovieTodayBinding.bind(view, bindingComponent);
                 case ysn.temanbioskop.R.layout.fragment_home:
                     return ysn.temanbioskop.databinding.FragmentHomeBinding.bind(view, bindingComponent);
                 case ysn.temanbioskop.R.layout.activity_check_movie_today:
@@ -32,6 +34,12 @@ class DataBinderMapper {
             case 423753077: {
                 if(tag.equals("layout/activity_main_0")) {
                     return ysn.temanbioskop.R.layout.activity_main;
+                }
+                break;
+            }
+            case 1037108738: {
+                if(tag.equals("layout/fragment_check_movie_today_0")) {
+                    return ysn.temanbioskop.R.layout.fragment_check_movie_today;
                 }
                 break;
             }

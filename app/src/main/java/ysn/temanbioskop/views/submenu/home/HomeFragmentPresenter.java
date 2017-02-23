@@ -29,7 +29,7 @@ public class HomeFragmentPresenter implements Presenter<HomeFragmentView> {
         homeFragmentView.onSetPageSwitcher(seconds);
     }
 
-    public void setTimerTask(int page) {
-        homeFragmentView.onSetTimerTask(page);
+    public void setTimerTask() {
+        homeFragmentView.onSetTimerTask();
     }
 }

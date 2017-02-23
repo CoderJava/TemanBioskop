@@ -11,6 +11,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.EventLog;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,8 +21,12 @@ import android.widget.TextView;
 
 import com.wang.avi.AVLoadingIndicatorView;
 
+import java.io.IOException;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -40,6 +45,7 @@ import ysn.temanbioskop.views.submenu.home.check.movie.today.result.adapter.Adap
  */
 public class ResultCheckMovieTodayFragment extends Fragment implements ResultCheckMovieTodayFragmentView {
 
+    private static final String TAG = "ResultCheckMovieTAG";
     @BindView(R.id.image_view_background_fragment_result_check_movie_today)
     ImageView imageViewFragmentResultCheckMovieToday;
     @BindView(R.id.text_view_nama_kota_fragment_result_check_movie_today)
@@ -70,16 +76,17 @@ public class ResultCheckMovieTodayFragment extends Fragment implements ResultChe
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_result_check_movie_today, container, false);
         initPresenter();
-        initRetrofit();
+        initRetrofit(JadwalBioskopApiService.baseApiUrl);
         onAttach();
         ButterKnife.bind(this, view);
         loadComponent();
+        resultCheckMovieTodayFragmentPresenter.setBackgroundBlur();
         return view;
     }
 
-    private void initRetrofit() {
+    private void initRetrofit(String baseApiUrl) {
         retrofit = new Retrofit.Builder()
-                .baseUrl(JadwalBioskopApiService.baseApiUrl)
+                .baseUrl(baseApiUrl)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }
@@ -98,6 +105,16 @@ public class ResultCheckMovieTodayFragment extends Fragment implements ResultChe
         resultCheckMovieTodayFragmentPresenter = new ResultCheckMovieTodayFragmentPresenter();
     }
 
+    @OnClick({R.id.button_refresh_fragment_result_check_movie_today})
+    public void onClick(Button button) {
+        switch (button.getId()) {
+            case R.id.button_refresh_fragment_result_check_movie_today:
+                resultCheckMovieTodayFragmentPresenter.loadDataJadwal();
+                buttonRefreshFragmentResultCheckMovieToday.setVisibility(View.GONE);
+                break;
+        }
+    }
+
     @Override
     public void onAttach() {
         resultCheckMovieTodayFragmentPresenter.onAttach(this);
@@ -111,6 +128,7 @@ public class ResultCheckMovieTodayFragment extends Fragment implements ResultChe
 
     @Override
     public void onLoadDataJadwal() {
+        Log.d(TAG, "idKota: " + idKota);
         loadingIndicatorViewFragmentResultCheckMovieToday.smoothToShow();
         JadwalBioskopApiService jadwalBioskopApiService = retrofit.create(JadwalBioskopApiService.class);
         Call<DataJadwal> resultCallDataJadwal = jadwalBioskopApiService.getDataJadwal(idKota, JadwalBioskopApiService.apiKey);
@@ -124,35 +142,47 @@ public class ResultCheckMovieTodayFragment extends Fragment implements ResultChe
             @Override
             public void onFailure(Call<DataJadwal> call, Throwable t) {
                 t.printStackTrace();
+                loadingIndicatorViewFragmentResultCheckMovieToday.smoothToHide();
                 resultCheckMovieTodayFragmentPresenter.showConnectionError();
-
             }
         });
     }
 
     @Override
     public void onLoadPoster() {
+        initRetrofit(MovieDbApiService.baseApiUrl);
         MovieDbApiService movieDbApiService = retrofit.create(MovieDbApiService.class);
         for(int a = 0; a < dataJadwal.getData().size(); a++) {
             final int b = a;
             isSuccessfully = true;
-            String query = dataJadwal.getData().get(a).getMovie();
+            final String query = dataJadwal.getData().get(a).getMovie().replaceAll(" ", "+".replaceAll(":", ""));
             final Call<SearchMovieDb> resultCallSearchMovieByName = movieDbApiService.getSearchMovieByName(MovieDbApiService.apiKey, query);
             resultCallSearchMovieByName.enqueue(new Callback<SearchMovieDb>() {
                 @Override
                 public void onResponse(Call<SearchMovieDb> call, Response<SearchMovieDb> response) {
+                    /*try {
+                        String searchMovieByNameJson = response.body().string();
+                        Log.d(TAG, "searchMovieByNameJson(" + query + "): " + searchMovieByNameJson);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }*/
+                    loadingIndicatorViewFragmentResultCheckMovieToday.smoothToHide();
                     SearchMovieDb searchMovieDb = response.body();
+                    Log.d(TAG, "searchMovieDb: " + searchMovieDb);
                     if (searchMovieDb.getResults().size() > 0) {
                         String posterPath = searchMovieDb.getResults().get(0).getPosterPath();
                         dataJadwal.getData().get(b).setPoster(MovieDbApiService.baseImageUrl + "" + posterPath);
+                        Log.d(TAG, "posterNew");
                     } else {
                         dataJadwal.getData().get(b).setPoster("-");
+                        Log.d(TAG, "posterNotFound");
                     }
                 }
 
                 @Override
                 public void onFailure(Call<SearchMovieDb> call, Throwable t) {
                     t.printStackTrace();
+                    loadingIndicatorViewFragmentResultCheckMovieToday.smoothToHide();
                     resultCheckMovieTodayFragmentPresenter.showConnectionError();
                     isSuccessfully = false;
                 }

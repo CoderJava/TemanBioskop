@@ -2531,9 +2531,6 @@ public final class R2 {
     public static final int actions = 0x7f0d00d5;
 
     @IdRes
-    public static final int activity_check_movie_today = 0x7f0d0084;
-
-    @IdRes
     public static final int activity_chooser_view_content = 0x7f0d0055;
 
     @IdRes
@@ -2570,7 +2567,7 @@ public final class R2 {
     public static final int buttonPanel = 0x7f0d005c;
 
     @IdRes
-    public static final int button_refresh_activity_check_movie_today = 0x7f0d008c;
+    public static final int button_refresh_fragment_check_movie_today = 0x7f0d00a3;
 
     @IdRes
     public static final int button_refresh_fragment_result_check_movie_today = 0x7f0d00bb;
@@ -2627,19 +2624,19 @@ public final class R2 {
     public static final int default_activity_button = 0x7f0d0058;
 
     @IdRes
-    public static final int design_bottom_sheet = 0x7f0d009b;
+    public static final int design_bottom_sheet = 0x7f0d0094;
 
     @IdRes
-    public static final int design_menu_item_action_area = 0x7f0d00a2;
+    public static final int design_menu_item_action_area = 0x7f0d009b;
 
     @IdRes
-    public static final int design_menu_item_action_area_stub = 0x7f0d00a1;
+    public static final int design_menu_item_action_area_stub = 0x7f0d009a;
 
     @IdRes
-    public static final int design_menu_item_text = 0x7f0d00a0;
+    public static final int design_menu_item_text = 0x7f0d0099;
 
     @IdRes
-    public static final int design_navigation_view = 0x7f0d009f;
+    public static final int design_navigation_view = 0x7f0d0098;
 
     @IdRes
     public static final int disableHome = 0x7f0d001e;
@@ -2648,7 +2645,7 @@ public final class R2 {
     public static final int edit_query = 0x7f0d0077;
 
     @IdRes
-    public static final int edit_text_nama_kota_activity_check_movie_today = 0x7f0d0089;
+    public static final int edit_text_nama_kota_fragment_check_movie_today = 0x7f0d00a0;
 
     @IdRes
     public static final int end = 0x7f0d0035;
@@ -2684,6 +2681,9 @@ public final class R2 {
     public static final int fixed = 0x7f0d0050;
 
     @IdRes
+    public static final int fragment_check_movie_today = 0x7f0d0084;
+
+    @IdRes
     public static final int frame_layout_container_activity_check_movie_today = 0x7f0d0085;
 
     @IdRes
@@ -2717,10 +2717,10 @@ public final class R2 {
     public static final int image_view_artist_fragment_home = 0x7f0d00a9;
 
     @IdRes
-    public static final int image_view_background_activity_check_movie_today = 0x7f0d0086;
+    public static final int image_view_background_activity_main = 0x7f0d0087;
 
     @IdRes
-    public static final int image_view_background_activity_main = 0x7f0d008e;
+    public static final int image_view_background_fragment_check_movie_today = 0x7f0d009d;
 
     @IdRes
     public static final int image_view_background_fragment_result_check_movie_today = 0x7f0d00b5;
@@ -2729,10 +2729,10 @@ public final class R2 {
     public static final int image_view_favorite_movie_item_content_fragment_result_check_movie_today = 0x7f0d00c2;
 
     @IdRes
-    public static final int image_view_icon_app_activity_main = 0x7f0d0090;
+    public static final int image_view_icon_app_activity_main = 0x7f0d0089;
 
     @IdRes
-    public static final int image_view_icon_search_activity_check_movie_today = 0x7f0d0088;
+    public static final int image_view_icon_search_fragment_check_movie_today = 0x7f0d009f;
 
     @IdRes
     public static final int image_view_icon_search_fragment_home = 0x7f0d00a5;
@@ -2771,7 +2771,7 @@ public final class R2 {
     public static final int item_touch_helper_previous_elevation = 0x7f0d0006;
 
     @IdRes
-    public static final int largeLabel = 0x7f0d0099;
+    public static final int largeLabel = 0x7f0d0092;
 
     @IdRes
     public static final int left = 0x7f0d0037;
@@ -2801,7 +2801,7 @@ public final class R2 {
     public static final int list_item = 0x7f0d0059;
 
     @IdRes
-    public static final int loading_indicator_view_activity_check_movie_today = 0x7f0d008a;
+    public static final int loading_indicator_view_fragment_check_movie_today = 0x7f0d00a1;
 
     @IdRes
     public static final int loading_indicator_view_fragment_result_check_movie_today = 0x7f0d00b9;
@@ -2825,7 +2825,7 @@ public final class R2 {
     public static final int multiply = 0x7f0d002a;
 
     @IdRes
-    public static final int navigation_header_container = 0x7f0d009e;
+    public static final int navigation_header_container = 0x7f0d0097;
 
     @IdRes
     public static final int never = 0x7f0d0049;
@@ -2879,16 +2879,16 @@ public final class R2 {
     public static final int recycler_view_content_fragment_result_check_movie_today = 0x7f0d00ba;
 
     @IdRes
-    public static final int recycler_view_nama_kota_activity_check_movie_today = 0x7f0d008b;
+    public static final int recycler_view_nama_kota_fragment_check_movie_today = 0x7f0d00a2;
 
     @IdRes
-    public static final int relative_layout_activity_main = 0x7f0d008d;
+    public static final int relative_layout_activity_main = 0x7f0d0086;
 
     @IdRes
     public static final int relative_layout_check_list_movie_today_fragment_home = 0x7f0d00a4;
 
     @IdRes
-    public static final int relative_layout_footer_activity_main = 0x7f0d0091;
+    public static final int relative_layout_footer_activity_main = 0x7f0d008a;
 
     @IdRes
     public static final int relative_layout_header_discover_movies_fragment_home = 0x7f0d00ab;
@@ -2972,13 +2972,13 @@ public final class R2 {
     public static final int showTitle = 0x7f0d0022;
 
     @IdRes
-    public static final int smallLabel = 0x7f0d0098;
+    public static final int smallLabel = 0x7f0d0091;
 
     @IdRes
-    public static final int snackbar_action = 0x7f0d009d;
+    public static final int snackbar_action = 0x7f0d0096;
 
     @IdRes
-    public static final int snackbar_text = 0x7f0d009c;
+    public static final int snackbar_text = 0x7f0d0095;
 
     @IdRes
     public static final int snap = 0x7f0d0028;
@@ -3023,7 +3023,7 @@ public final class R2 {
     public static final int tabMode = 0x7f0d001d;
 
     @IdRes
-    public static final int tab_layout_menu_activity_main = 0x7f0d0096;
+    public static final int tab_layout_menu_activity_main = 0x7f0d008f;
 
     @IdRes
     public static final int text = 0x7f0d00da;
@@ -3041,10 +3041,10 @@ public final class R2 {
     public static final int textWatcher = 0x7f0d000c;
 
     @IdRes
-    public static final int text_input_password_toggle = 0x7f0d00a3;
+    public static final int text_input_password_toggle = 0x7f0d009c;
 
     @IdRes
-    public static final int text_view_do_you = 0x7f0d0092;
+    public static final int text_view_do_you = 0x7f0d008b;
 
     @IdRes
     public static final int text_view_more_discover_movies_fragment_home = 0x7f0d00ae;
@@ -3059,13 +3059,13 @@ public final class R2 {
     public static final int text_view_nama_kota_item_nama_kota_activity_check_movie_today = 0x7f0d00c4;
 
     @IdRes
-    public static final int text_view_or = 0x7f0d0093;
+    public static final int text_view_or = 0x7f0d008c;
 
     @IdRes
-    public static final int text_view_sign_in = 0x7f0d0094;
+    public static final int text_view_sign_in = 0x7f0d008d;
 
     @IdRes
-    public static final int text_view_sign_up = 0x7f0d0095;
+    public static final int text_view_sign_up = 0x7f0d008e;
 
     @IdRes
     public static final int text_view_tanggal_fragment_result_check_movie_today = 0x7f0d00b8;
@@ -3089,10 +3089,10 @@ public final class R2 {
     public static final int title_template = 0x7f0d0068;
 
     @IdRes
-    public static final int toolbar_activity_check_movie_today = 0x7f0d0087;
+    public static final int toolbar_activity_main = 0x7f0d0088;
 
     @IdRes
-    public static final int toolbar_activity_main = 0x7f0d008f;
+    public static final int toolbar_fragment_check_movie_today = 0x7f0d009e;
 
     @IdRes
     public static final int top = 0x7f0d003a;
@@ -3101,7 +3101,7 @@ public final class R2 {
     public static final int topPanel = 0x7f0d0067;
 
     @IdRes
-    public static final int touch_outside = 0x7f0d009a;
+    public static final int touch_outside = 0x7f0d0093;
 
     @IdRes
     public static final int transition_current_scene = 0x7f0d000f;
@@ -3125,7 +3125,7 @@ public final class R2 {
     public static final int view_offset_helper = 0x7f0d0012;
 
     @IdRes
-    public static final int view_pager_menu_activity_main = 0x7f0d0097;
+    public static final int view_pager_menu_activity_main = 0x7f0d0090;
 
     @IdRes
     public static final int view_pager_slide_show_fragment_home = 0x7f0d00a6;

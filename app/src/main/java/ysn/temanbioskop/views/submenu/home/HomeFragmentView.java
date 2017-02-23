@@ -12,6 +12,6 @@ public interface HomeFragmentView extends View {
 
     void onSetPageSwitcher(int seconds);
 
-    void onSetTimerTask(int page);
+    void onSetTimerTask();
 
 }

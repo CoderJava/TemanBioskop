@@ -58,7 +58,7 @@ public class AdapterCheckMovieToday extends RecyclerView.Adapter<AdapterCheckMov
             ButterKnife.bind(this, itemView);
         }
 
-        public void onClick(final String namaKota, final String idKota) {
+        public void onClick(final String idKota, final String namaKota) {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

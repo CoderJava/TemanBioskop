@@ -1,4 +1,4 @@
-#Fri Feb 24 00:02:36 WIB 2017
+#Fri Feb 24 02:01:09 WIB 2017
 base.0=/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

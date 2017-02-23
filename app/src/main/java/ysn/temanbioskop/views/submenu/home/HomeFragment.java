@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -111,27 +112,29 @@ public class HomeFragment extends Fragment implements HomeFragmentView {
     public void onSetPageSwitcher(int seconds) {
         timer = new Timer();
         timer.scheduleAtFixedRate(new RemindTask(), 0, seconds * 1000);
+        Log.d(TAG, "setPageSwitcher");
     }
 
     @Override
-    public void onSetTimerTask(int page) {
+    public void onSetTimerTask() {
         if (page > 4) {
             page = 0;
-            viewPagerSlideShow.setCurrentItem(page++);
+            viewPagerSlideShow.setCurrentItem(page
+            );
             /*timer.cancel();*/
         } else {
             viewPagerSlideShow.setCurrentItem(page++);
         }
     }
 
-    class RemindTask extends TimerTask {
+    private class RemindTask extends TimerTask {
 
         @Override
         public void run() {
             fragmentActivity.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    homeFragmentPresenter.setTimerTask(page);
+                    homeFragmentPresenter.setTimerTask();
                 }
             });
         }

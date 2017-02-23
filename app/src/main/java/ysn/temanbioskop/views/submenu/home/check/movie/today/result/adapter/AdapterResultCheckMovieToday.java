@@ -41,7 +41,7 @@ public class AdapterResultCheckMovieToday extends RecyclerView.Adapter<AdapterRe
     public void onBindViewHolder(ItemContentResultCheckMovieToday holder, int position) {
         DatumJadwal datumJadwal = listDatumJadwal.get(position);
         String poster = datumJadwal.getPoster();
-        if (poster.equals("-")) {
+        if (!poster.equals("-")) {
             Glide.with(context)
                     .load(poster)
                     .thumbnail(0.5f)
