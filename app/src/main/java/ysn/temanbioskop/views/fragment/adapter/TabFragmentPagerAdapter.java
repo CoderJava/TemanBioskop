@@ -4,9 +4,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import ysn.temanbioskop.views.fragment.favorite_movie.FavoriteMovieFragment;
+import ysn.temanbioskop.views.fragment.favorite.movie.FavoriteMovieFragment;
 import ysn.temanbioskop.views.fragment.home.HomeFragment;
-import ysn.temanbioskop.views.fragment.popular_movie.PopularMovieFragment;
+import ysn.temanbioskop.views.fragment.popular.movie.PopularMovieFragment;
 
 /**
  * Created by root on 02/02/17.

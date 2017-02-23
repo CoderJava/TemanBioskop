@@ -201,6 +201,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.wang.avi/library/2.1.3/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e699699fae0092703de1d02b217f43803d0f7e0a">
+        <dex dex="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/pre-dexed/debug/com.wang.avi-library-2.1.3_3e9ab96f79f00e606837dbd741e8c7465c4e3a8e.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"

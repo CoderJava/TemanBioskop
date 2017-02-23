@@ -7,7 +7,7 @@
         android:id="@+id/relative_layout_activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="ysn.temanbioskop.views.activity.MainActivity">
+        tools:context="ysn.temanbioskop.views.main.MainActivity">
 
         <ImageView
             android:id="@+id/image_view_background_activity_main"

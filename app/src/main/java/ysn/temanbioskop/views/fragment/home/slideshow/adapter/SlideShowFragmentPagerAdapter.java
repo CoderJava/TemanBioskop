@@ -1,14 +1,14 @@
-package ysn.temanbioskop.views.fragment.home.slide_show.adapter;
+package ysn.temanbioskop.views.fragment.home.slideshow.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import ysn.temanbioskop.views.fragment.home.slide_show.fragment.SlideShow1HomeFragment;
-import ysn.temanbioskop.views.fragment.home.slide_show.fragment.SlideShow2HomeFragment;
-import ysn.temanbioskop.views.fragment.home.slide_show.fragment.SlideShow3HomeFragment;
-import ysn.temanbioskop.views.fragment.home.slide_show.fragment.SlideShow4HomeFragment;
-import ysn.temanbioskop.views.fragment.home.slide_show.fragment.SlideShow5HomeFragment;
+import ysn.temanbioskop.views.fragment.home.slideshow.fragment.SlideShow1HomeFragment;
+import ysn.temanbioskop.views.fragment.home.slideshow.fragment.SlideShow2HomeFragment;
+import ysn.temanbioskop.views.fragment.home.slideshow.fragment.SlideShow3HomeFragment;
+import ysn.temanbioskop.views.fragment.home.slideshow.fragment.SlideShow4HomeFragment;
+import ysn.temanbioskop.views.fragment.home.slideshow.fragment.SlideShow5HomeFragment;
 
 /**
  * Created by root on 13/02/17.

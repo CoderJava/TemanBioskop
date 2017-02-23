@@ -1,16 +1,11 @@
-package ysn.temanbioskop.tools.blur;
+package ysn.temanbioskop.config.tools.blur;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.Paint;
-import android.graphics.drawable.BitmapDrawable;
-import android.os.AsyncTask;
 import android.renderscript.Allocation;
 import android.renderscript.Element;
 import android.renderscript.RenderScript;
 import android.renderscript.ScriptIntrinsicBlur;
-import android.view.View;
 
 /**
  * Created by root on 02/02/17.

@@ -1,4 +1,4 @@
-package ysn.temanbioskop.views.activity;
+package ysn.temanbioskop.views.main;
 
 import android.databinding.DataBindingUtil;
 import android.graphics.Bitmap;
@@ -17,10 +17,12 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import ysn.temanbioskop.R;
 import ysn.temanbioskop.databinding.ActivityMainBinding;
-import ysn.temanbioskop.tools.blur.BlurBuilder;
+import ysn.temanbioskop.config.tools.blur.BlurBuilder;
 import ysn.temanbioskop.views.fragment.adapter.TabFragmentPagerAdapter;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MainActivityView {
+
+    private MainActivityPresenter mainActivityPresenter;
 
     @BindView(R.id.image_view_background_activity_main)
     ImageView imageViewBackgroundActivityMain;
@@ -35,10 +37,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initPresenter();
+        onAttach();
+        loadComponent();
+        mainActivityPresenter.setBackgroundBlur();
+    }
+
+    private void loadComponent() {
         activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         ButterKnife.bind(this);
 
-        setBackgroundBlur();
 
         final String[] title = new String[]{"Home", "Favorite", "Popular"};
         viewPagerMenuActivityMain.setAdapter(new TabFragmentPagerAdapter(getSupportFragmentManager(), title));
@@ -73,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         viewPagerMenuActivityMain.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
+                //  nothing to do
             }
 
             @Override
@@ -89,12 +97,27 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onPageScrollStateChanged(int state) {
-
+                //  nothing to do
             }
         });
     }
 
-    private void setBackgroundBlur() {
+    private void initPresenter() {
+        mainActivityPresenter = new MainActivityPresenter();
+    }
+
+    @Override
+    public void onAttach() {
+        mainActivityPresenter.onAttach(this);
+    }
+
+    @Override
+    public void onDetach() {
+        mainActivityPresenter.onDetach();
+    }
+
+    @Override
+    public void onSetBackgroundBlur() {
         Drawable drawable = getResources().getDrawable(R.drawable.background_home);
         Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
         Bitmap blurBuilder = BlurBuilder.blur(this, bitmap);

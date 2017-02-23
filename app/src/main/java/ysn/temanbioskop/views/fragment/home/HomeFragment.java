@@ -6,11 +6,9 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -20,15 +18,16 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import ysn.temanbioskop.R;
 import ysn.temanbioskop.databinding.FragmentHomeBinding;
-import ysn.temanbioskop.views.fragment.home.check_movie_today.CheckMovieTodayActivity;
-import ysn.temanbioskop.views.fragment.home.slide_show.adapter.SlideShowFragmentPagerAdapter;
+import ysn.temanbioskop.views.fragment.home.check.movie.today.CheckMovieTodayActivity;
+import ysn.temanbioskop.views.fragment.home.slideshow.adapter.SlideShowFragmentPagerAdapter;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements HomeFragmentView {
 
     private static final String TAG = "HomeFragmentTAG";
+    private HomeFragmentPresenter homeFragmentPresenter;
     private View view;
     @BindView(R.id.view_pager_slide_show_fragment_home)
     ViewPager viewPagerSlideShow;
@@ -48,12 +47,16 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_home, container, false);
-        /*fragmentHomeBinding = DataBindingUtil.setContentView(getActivity(), R.layout.fragment_home);*/
+        initPresenter();
+        onAttach();
         ButterKnife.bind(this, view);
         fragmentActivity = getActivity();
-        setSlideShow();
-        Log.d(TAG, "onCreateView");
+        homeFragmentPresenter.setSlideShow();
         return view;
+    }
+
+    private void initPresenter() {
+        homeFragmentPresenter = new HomeFragmentPresenter();
     }
 
     @OnClick({R.id.relative_layout_check_list_movie_today_fragment_home})
@@ -67,36 +70,58 @@ public class HomeFragment extends Fragment {
         }
     }
 
-    private void setSlideShow() {
-        viewPagerSlideShow.setAdapter(new SlideShowFragmentPagerAdapter(getFragmentManager(), new int[]{
-                R.drawable.pict1_backdrops, R.drawable.pict2_backdrops, R.drawable.pict3_backdrops, R.drawable.pict4_backdrops, R.drawable.pict5_backdrops
-        }));
-        if (timer == null) {
-            pageSwitcher(5);
-        }
-    }
-
-    private void pageSwitcher(int seconds) {
-        timer = new Timer();
-        timer.scheduleAtFixedRate(new RemindTask(), 0, seconds * 1000);
-    }
-
     @Override
     public void onPause() {
         super.onPause();
-        Log.d(TAG, "onPause");
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        Log.d(TAG, "onResume");
     }
 
     @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        Log.d(TAG, "onDestroyView");
+    public void onDestroy() {
+        homeFragmentPresenter.onDetach();
+        super.onDestroy();
+    }
+
+    @Override
+    public void onAttach() {
+        homeFragmentPresenter.onAttach(this);
+    }
+
+    @Override
+    public void onDetach() {
+        homeFragmentPresenter.onDetach();
+        super.onDetach();
+    }
+
+    @Override
+    public void onSetSlideShow() {
+        viewPagerSlideShow.setAdapter(new SlideShowFragmentPagerAdapter(getFragmentManager(), new int[]{
+                R.drawable.pict1_backdrops, R.drawable.pict2_backdrops, R.drawable.pict3_backdrops, R.drawable.pict4_backdrops, R.drawable.pict5_backdrops
+        }));
+        if (timer == null) {
+            homeFragmentPresenter.setPageSwitcher(5);
+        }
+    }
+
+    @Override
+    public void onSetPageSwitcher(int seconds) {
+        timer = new Timer();
+        timer.scheduleAtFixedRate(new RemindTask(), 0, seconds * 1000);
+    }
+
+    @Override
+    public void onSetTimerTask(int page) {
+        if (page > 4) {
+            page = 0;
+            viewPagerSlideShow.setCurrentItem(page++);
+            /*timer.cancel();*/
+        } else {
+            viewPagerSlideShow.setCurrentItem(page++);
+        }
     }
 
     class RemindTask extends TimerTask {
@@ -106,13 +131,7 @@ public class HomeFragment extends Fragment {
             fragmentActivity.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    if (page > 4) {
-                        page = 0;
-                        viewPagerSlideShow.setCurrentItem(page++);
-                        /*timer.cancel();*/
-                    } else {
-                        viewPagerSlideShow.setCurrentItem(page++);
-                    }
+                    homeFragmentPresenter.setTimerTask(page);
                 }
             });
         }

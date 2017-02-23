@@ -1,4 +1,4 @@
-package ysn.temanbioskop.views.fragment.home.slide_show.fragment;
+package ysn.temanbioskop.views.fragment.home.slideshow.fragment;
 
 
 import android.os.Bundle;
