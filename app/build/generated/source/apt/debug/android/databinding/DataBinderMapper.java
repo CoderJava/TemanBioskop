@@ -13,6 +13,8 @@ class DataBinderMapper {
                     return ysn.temanbioskop.databinding.FragmentHomeBinding.bind(view, bindingComponent);
                 case ysn.temanbioskop.R.layout.activity_check_movie_today:
                     return ysn.temanbioskop.databinding.ActivityCheckMovieTodayBinding.bind(view, bindingComponent);
+                case ysn.temanbioskop.R.layout.fragment_result_check_movie_today:
+                    return ysn.temanbioskop.databinding.FragmentResultCheckMovieTodayBinding.bind(view, bindingComponent);
         }
         return null;
     }
@@ -42,6 +44,12 @@ class DataBinderMapper {
             case -999210687: {
                 if(tag.equals("layout/activity_check_movie_today_0")) {
                     return ysn.temanbioskop.R.layout.activity_check_movie_today;
+                }
+                break;
+            }
+            case 1162800500: {
+                if(tag.equals("layout/fragment_result_check_movie_today_0")) {
+                    return ysn.temanbioskop.R.layout.fragment_result_check_movie_today;
                 }
                 break;
             }

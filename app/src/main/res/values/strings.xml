@@ -7,4 +7,6 @@
     <string name="popular_movie_fragment">Popular Movie Fragment</string>
     <string name="favorite_movie_fragment">Favorite Movie Fragment</string>
     <string name="home_fragment">Home Fragment</string>
+    <string name="str_internet_problem">Your connection is problem. Please try again!</string>
+    <string name="refresh">Refresh</string>
 </resources>

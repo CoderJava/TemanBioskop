@@ -36,6 +36,10 @@
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ratingbar_indicator_material.xml"
     },
     {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/divider_item_decoration_whie.xml",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/divider_item_decoration_whie.xml"
+    },
+    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/pict5_poster.jpg",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/pict5_poster.jpg"
     },
@@ -152,6 +156,10 @@
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/background_home.png"
     },
     {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/background_poster_movie.xml",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/background_poster_movie.xml"
+    },
+    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/drawable/common_google_signin_btn_text_dark.xml"
     },
@@ -174,6 +182,10 @@
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/pict1_backdrops.jpg",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/pict1_backdrops.jpg"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/poster_not_found.jpeg",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/drawable/poster_not_found.jpeg"
     },
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_dark.xml",

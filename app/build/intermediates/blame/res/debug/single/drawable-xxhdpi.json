@@ -16,6 +16,10 @@
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_home_selected_24dp.png"
     },
     {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_favorite_white_24dp.png",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_favorite_white_24dp.png"
+    },
+    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_keyboard_arrow_right_white_24dp.png",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_keyboard_arrow_right_white_24dp.png"
     },
@@ -28,8 +32,20 @@
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_home_unselected_24dp.png"
     },
     {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_star_border_white_24dp.png",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_star_border_white_24dp.png"
+    },
+    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_videocam_white_24dp.png",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_videocam_white_24dp.png"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_star_white_24dp.png",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_star_white_24dp.png"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_favorite_white_border_24dp.png",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_favorite_white_border_24dp.png"
     },
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_person_white_24dp.png",

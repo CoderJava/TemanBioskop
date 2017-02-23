@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ysn.temanbioskop.views.fragment.home.slideshow.fragment.SlideShow4HomeFragment">
+    tools:context="ysn.temanbioskop.views.submenu.home.slideshow.fragment.SlideShow4HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView

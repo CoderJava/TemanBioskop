@@ -45,10 +45,10 @@ MERGED from [com.android.support:support-compat:25.1.0] /home/yudi/AndroidStudio
 		ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:7:9-44
 	android:theme
 		ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:10:9-40
-activity#ysn.temanbioskop.views.activity.MainActivity
+activity#ysn.temanbioskop.views.main.MainActivity
 ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:11:9-17:20
 	android:name
-		ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:11:19-62
+		ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:11:19-58
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:12:13-16:29
 action#android.intent.action.MAIN
@@ -59,10 +59,10 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:15:17-77
 	android:name
 		ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:15:27-74
-activity#ysn.temanbioskop.views.fragment.home.check_movie_today.CheckMovieTodayActivity
-ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:18:9-108
+activity#ysn.temanbioskop.views.submenu.home.check.movie.today.CheckMovieTodayActivity
+ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:18:9-107
 	android:name
-		ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:18:19-96
+		ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:18:19-95
 uses-sdk
 INJECTED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.google.firebase:firebase-core:9.0.0] /home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.google.firebase/firebase-core/9.0.0/AndroidManifest.xml:4:5-42

@@ -201,6 +201,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/root/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/pre-dexed/debug/glide-3.7.0_ac342f17260710fcdf4b2d129687098a64b8d47c.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.wang.avi/library/2.1.3/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -279,6 +288,15 @@
         revision="25.0.1"
         sha1="6f65c144283b31b4b9a70e6e7aa4c4a1c897d4b8">
         <dex dex="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.0.0_17df136e1163f87ffe25580315fef28c12ec70ec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.gradle/caches/modules-2/files-2.1/org.greenrobot/eventbus/3.0.0/ddd99896e9569eaababbe81b35d80e1b91c4ad85/eventbus-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
+        <dex dex="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/pre-dexed/debug/eventbus-3.0.0_75d7e9df513c42eca37520f56c55d61fd8448c17.jar" />
     </item>
     <item
         is-multidex="false"

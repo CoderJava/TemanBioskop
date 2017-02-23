@@ -18,7 +18,7 @@ import butterknife.ButterKnife;
 import ysn.temanbioskop.R;
 import ysn.temanbioskop.databinding.ActivityMainBinding;
 import ysn.temanbioskop.config.tools.blur.BlurBuilder;
-import ysn.temanbioskop.views.fragment.adapter.TabFragmentPagerAdapter;
+import ysn.temanbioskop.views.submenu.adapter.TabFragmentPagerAdapter;
 
 public class MainActivity extends AppCompatActivity implements MainActivityView {
 
