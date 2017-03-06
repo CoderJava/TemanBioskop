@@ -14,5 +14,7 @@ public interface HomeFragmentView extends View {
 
     void onSetTimerTask();
 
-    void onLoadDataDiscover();
+    void onLoadDataDiscoverMovies();
+
+    void onLoadDataUpcomingMovies();
 }

@@ -342,7 +342,6 @@
                         android:paddingStart="0dp"
                         android:paddingEnd="8dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/pict4_poster"
                         />
 
                     <ImageView
@@ -353,7 +352,6 @@
                         android:paddingStart="4dp"
                         android:paddingEnd="4dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/pict5_poster"
                         />
 
                     <ImageView
@@ -364,7 +362,6 @@
                         android:paddingStart="8dp"
                         android:paddingEnd="0dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/pict6_poster"
                         />
 
                 </LinearLayout>

@@ -16,12 +16,12 @@
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/res/anim/design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/anim/zoom_exit.xml",
-        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/anim/zoom_exit.xml"
-    },
-    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/anim/slide_out_up.xml",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/anim/slide_out_up.xml"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/anim/zoom_exit.xml",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/anim/zoom_exit.xml"
     },
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",

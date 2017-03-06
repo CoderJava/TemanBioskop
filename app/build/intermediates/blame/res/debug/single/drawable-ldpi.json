@@ -16,12 +16,12 @@
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/generated/res/pngs/debug/drawable-ldpi/ic_favorite_white_24dp.png"
     },
     {
-        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_movie_filter_selected_24dp.png",
-        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/generated/res/pngs/debug/drawable-ldpi/ic_movie_filter_selected_24dp.png"
-    },
-    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_star_white_24dp.png",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/generated/res/pngs/debug/drawable-ldpi/ic_star_white_24dp.png"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_movie_filter_selected_24dp.png",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/generated/res/pngs/debug/drawable-ldpi/ic_movie_filter_selected_24dp.png"
     },
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_search_white_24dp.png",
@@ -32,12 +32,12 @@
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/generated/res/pngs/debug/drawable-ldpi/ic_favorite_selected_24dp.png"
     },
     {
-        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_favorite_unselected_24dp.png",
-        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/generated/res/pngs/debug/drawable-ldpi/ic_favorite_unselected_24dp.png"
-    },
-    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_person_white_24dp.png",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/generated/res/pngs/debug/drawable-ldpi/ic_person_white_24dp.png"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_favorite_unselected_24dp.png",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/generated/res/pngs/debug/drawable-ldpi/ic_favorite_unselected_24dp.png"
     },
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_favorite_white_border_24dp.png",

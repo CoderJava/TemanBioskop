@@ -3,6 +3,7 @@ package ysn.temanbioskop.views.submenu.home;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.sax.RootElement;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
@@ -11,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.bumptech.glide.Glide;
@@ -29,11 +31,12 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import ysn.temanbioskop.R;
-import ysn.temanbioskop.api.JadwalBioskopApiService;
 import ysn.temanbioskop.api.MovieDbApiService;
 import ysn.temanbioskop.databinding.FragmentHomeBinding;
+import ysn.temanbioskop.internal.model.bioskop.moviedb.discover.DiscoverMovieDb;
 import ysn.temanbioskop.internal.model.bioskop.moviedb.search.Result;
 import ysn.temanbioskop.internal.model.bioskop.moviedb.search.SearchMovieDb;
+import ysn.temanbioskop.internal.model.bioskop.moviedb.upcoming.UpcomingMovieDb;
 import ysn.temanbioskop.views.submenu.home.check.movie.today.CheckMovieTodayActivity;
 import ysn.temanbioskop.views.submenu.home.slideshow.adapter.SlideShowFragmentPagerAdapter;
 
@@ -52,6 +55,10 @@ public class HomeFragment extends Fragment implements HomeFragmentView {
     ImageView imageView2PosterDiscoverMovie;
     @BindView(R.id.image_view_3_poster_discover_movie_fragment_home)
     ImageView imageView3PosterDiscoverMovie;
+    @BindView(R.id.relative_layout_header_upcoming_movies_fragment_home)
+    RelativeLayout relativeLayoutUpcomingMovies;
+    @BindView(R.id.linear_layout_poster_upcoming_movies_fragment_home)
+    LinearLayout linearLayoutPosterUpcomingMovies;
     @BindView(R.id.image_view_1_poster_upcoming_movie_fragment_home)
     ImageView imageView1PosterUpcomingMovie;
     @BindView(R.id.image_view_2_poster_upcoming_movie_fragment_home)
@@ -80,7 +87,8 @@ public class HomeFragment extends Fragment implements HomeFragmentView {
         ButterKnife.bind(this, view);
         fragmentActivity = getActivity();
         homeFragmentPresenter.setSlideShow();
-        homeFragmentPresenter.loadDataDiscover();
+        homeFragmentPresenter.loadDataDiscoverMovies();
+        homeFragmentPresenter.loadDataUpcomingMovies();
         return view;
     }
 
@@ -163,15 +171,15 @@ public class HomeFragment extends Fragment implements HomeFragmentView {
     }
 
     @Override
-    public void onLoadDataDiscover() {
+    public void onLoadDataDiscoverMovies() {
         initRetrofit(MovieDbApiService.baseApiUrl);
         MovieDbApiService movieDbApiService = retrofit.create(MovieDbApiService.class);
-        Call<SearchMovieDb> resultCallDiscoverMovie = movieDbApiService.getDiscoverMovie(MovieDbApiService.apiKey, "id", "1");
-        resultCallDiscoverMovie.enqueue(new Callback<SearchMovieDb>() {
+        Call<DiscoverMovieDb> resultCallDiscoverMovie = movieDbApiService.getDiscoverMovie(MovieDbApiService.apiKey, "id", "1");
+        resultCallDiscoverMovie.enqueue(new Callback<DiscoverMovieDb>() {
             @Override
-            public void onResponse(Call<SearchMovieDb> call, Response<SearchMovieDb> response) {
-                SearchMovieDb searchMovieDb = response.body();
-                List<Result> listResult = searchMovieDb.getResults();
+            public void onResponse(Call<DiscoverMovieDb> call, Response<DiscoverMovieDb> response) {
+                DiscoverMovieDb discoverMovieDb = response.body();
+                List<ysn.temanbioskop.internal.model.bioskop.moviedb.discover.Result> listResult = discoverMovieDb.getResults();
                 Log.d(TAG, "onResponse loadDataDiscoverMovies");
 
                 //  image view 1 discover movie
@@ -203,12 +211,73 @@ public class HomeFragment extends Fragment implements HomeFragmentView {
             }
 
             @Override
-            public void onFailure(Call<SearchMovieDb> call, Throwable t) {
+            public void onFailure(Call<DiscoverMovieDb> call, Throwable t) {
                 t.printStackTrace();
                 Log.d(TAG, "onFailure loadDataDiscoverMovies");
                 imageView1PosterDiscoverMovie.setImageResource(R.drawable.image_not_found_placeholder);
                 imageView2PosterDiscoverMovie.setImageResource(R.drawable.image_not_found_placeholder);
                 imageView3PosterDiscoverMovie.setImageResource(R.drawable.image_not_found_placeholder);
+            }
+        });
+    }
+
+    @Override
+    public void onLoadDataUpcomingMovies() {
+        initRetrofit(MovieDbApiService.baseApiUrl);
+        MovieDbApiService movieDbApiService = retrofit.create(MovieDbApiService.class);
+        Call<UpcomingMovieDb> resultCallUpcomingMovie = movieDbApiService.getUpcomingMovie(MovieDbApiService.apiKey, "id");
+        resultCallUpcomingMovie.enqueue(new Callback<UpcomingMovieDb>() {
+            @Override
+            public void onResponse(Call<UpcomingMovieDb> call, Response<UpcomingMovieDb> response) {
+                UpcomingMovieDb upcomingMovieDb = response.body();
+                List<ysn.temanbioskop.internal.model.bioskop.moviedb.upcoming.Result> listResult = upcomingMovieDb.getResults();
+                String posterPath;
+                if (listResult.size() >= 1) {
+                    posterPath = MovieDbApiService.baseImageUrl + "" + listResult.get(0).getPosterPath();
+                    Glide.with(fragmentActivity)
+                            .load(posterPath)
+                            .placeholder(R.drawable.image_coming_soon)
+                            .thumbnail(0.5f)
+                            .crossFade()
+                            .diskCacheStrategy(DiskCacheStrategy.ALL)
+                            .into(imageView1PosterUpcomingMovie);
+
+                }
+
+                if (listResult.size() >= 2) {
+                    posterPath = MovieDbApiService.baseImageUrl + "" + listResult.get(1).getPosterPath();
+                    Glide.with(fragmentActivity)
+                            .load(posterPath)
+                            .placeholder(R.drawable.image_coming_soon)
+                            .thumbnail(0.5f)
+                            .crossFade()
+                            .diskCacheStrategy(DiskCacheStrategy.ALL)
+                            .into(imageView2PosterUpcomingMovie);
+                }
+
+                if (listResult.size() >= 3) {
+                    posterPath = MovieDbApiService.baseImageUrl + "" + listResult.get(2).getPosterPath();
+                    Glide.with(fragmentActivity)
+                            .load(posterPath)
+                            .placeholder(R.drawable.image_coming_soon)
+                            .thumbnail(0.5f)
+                            .crossFade()
+                            .diskCacheStrategy(DiskCacheStrategy.ALL)
+                            .into(imageView3PosterUpcomingMovie);
+                }
+
+                if (listResult.size() == 0) {
+                    relativeLayoutUpcomingMovies.setVisibility(View.GONE);
+                    linearLayoutPosterUpcomingMovies.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<UpcomingMovieDb> call, Throwable t) {
+                t.printStackTrace();
+                imageView1PosterUpcomingMovie.setImageResource(R.drawable.image_not_found_placeholder);
+                imageView2PosterUpcomingMovie.setImageResource(R.drawable.image_not_found_placeholder);
+                imageView3PosterUpcomingMovie.setImageResource(R.drawable.image_not_found_placeholder);
             }
         });
     }

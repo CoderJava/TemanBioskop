@@ -1,10 +1,11 @@
 package ysn.temanbioskop.api;
 
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
+import ysn.temanbioskop.internal.model.bioskop.moviedb.discover.DiscoverMovieDb;
 import ysn.temanbioskop.internal.model.bioskop.moviedb.search.SearchMovieDb;
+import ysn.temanbioskop.internal.model.bioskop.moviedb.upcoming.UpcomingMovieDb;
 
 /**
  * Created by root on 23/02/17.
@@ -25,10 +26,17 @@ public interface MovieDbApiService {
 
     /*https://api.themoviedb.org/3/discover/movie?api_key=fe71629f457c2466875babf7fbe5bb6c&region=id&page=3*/
     @GET("discover/movie")
-    Call<SearchMovieDb> getDiscoverMovie(
+    Call<DiscoverMovieDb> getDiscoverMovie(
             @Query("api_key") String apiKey,
             @Query("region") String region,
             @Query("page") String page
+    );
+
+    /*https://api.themoviedb.org/3/movie/upcoming?api_key=fe71629f457c2466875babf7fbe5bb6c&region=id*/
+    @GET("movie/upcoming")
+    Call<UpcomingMovieDb> getUpcomingMovie(
+            @Query("api_key") String apiKey,
+            @Query("region") String region
     );
 
 }
