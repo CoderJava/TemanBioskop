@@ -32,4 +32,8 @@ public class HomeFragmentPresenter implements Presenter<HomeFragmentView> {
     public void setTimerTask() {
         homeFragmentView.onSetTimerTask();
     }
+
+    public void loadDataDiscover() {
+        homeFragmentView.onLoadDataDiscover();
+    }
 }

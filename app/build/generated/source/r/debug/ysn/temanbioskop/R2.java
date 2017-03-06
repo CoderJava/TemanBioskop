@@ -2169,25 +2169,25 @@ public final class R2 {
     public static final int avd_hide_password = 0x7f020053;
 
     @DrawableRes
-    public static final int avd_hide_password_1 = 0x7f0200b3;
+    public static final int avd_hide_password_1 = 0x7f0200b5;
 
     @DrawableRes
-    public static final int avd_hide_password_2 = 0x7f0200b4;
+    public static final int avd_hide_password_2 = 0x7f0200b6;
 
     @DrawableRes
-    public static final int avd_hide_password_3 = 0x7f0200b5;
+    public static final int avd_hide_password_3 = 0x7f0200b7;
 
     @DrawableRes
     public static final int avd_show_password = 0x7f020054;
 
     @DrawableRes
-    public static final int avd_show_password_1 = 0x7f0200b6;
+    public static final int avd_show_password_1 = 0x7f0200b8;
 
     @DrawableRes
-    public static final int avd_show_password_2 = 0x7f0200b7;
+    public static final int avd_show_password_2 = 0x7f0200b9;
 
     @DrawableRes
-    public static final int avd_show_password_3 = 0x7f0200b8;
+    public static final int avd_show_password_3 = 0x7f0200ba;
 
     @DrawableRes
     public static final int backgroud_button_white_corners = 0x7f020055;
@@ -2397,84 +2397,90 @@ public final class R2 {
     public static final int icon_app = 0x7f020099;
 
     @DrawableRes
-    public static final int navigation_empty_icon = 0x7f02009a;
+    public static final int image_coming_soon = 0x7f02009a;
 
     @DrawableRes
-    public static final int notification_action_background = 0x7f02009b;
+    public static final int image_not_found_placeholder = 0x7f02009b;
 
     @DrawableRes
-    public static final int notification_bg = 0x7f02009c;
+    public static final int navigation_empty_icon = 0x7f02009c;
 
     @DrawableRes
-    public static final int notification_bg_low = 0x7f02009d;
+    public static final int notification_action_background = 0x7f02009d;
 
     @DrawableRes
-    public static final int notification_bg_low_normal = 0x7f02009e;
+    public static final int notification_bg = 0x7f02009e;
 
     @DrawableRes
-    public static final int notification_bg_low_pressed = 0x7f02009f;
+    public static final int notification_bg_low = 0x7f02009f;
 
     @DrawableRes
-    public static final int notification_bg_normal = 0x7f0200a0;
+    public static final int notification_bg_low_normal = 0x7f0200a0;
 
     @DrawableRes
-    public static final int notification_bg_normal_pressed = 0x7f0200a1;
+    public static final int notification_bg_low_pressed = 0x7f0200a1;
 
     @DrawableRes
-    public static final int notification_icon_background = 0x7f0200a2;
+    public static final int notification_bg_normal = 0x7f0200a2;
 
     @DrawableRes
-    public static final int notification_template_icon_bg = 0x7f0200b1;
+    public static final int notification_bg_normal_pressed = 0x7f0200a3;
 
     @DrawableRes
-    public static final int notification_template_icon_low_bg = 0x7f0200b2;
+    public static final int notification_icon_background = 0x7f0200a4;
 
     @DrawableRes
-    public static final int notification_tile_bg = 0x7f0200a3;
+    public static final int notification_template_icon_bg = 0x7f0200b3;
 
     @DrawableRes
-    public static final int notify_panel_notification_icon_bg = 0x7f0200a4;
+    public static final int notification_template_icon_low_bg = 0x7f0200b4;
 
     @DrawableRes
-    public static final int pict1_backdrops = 0x7f0200a5;
+    public static final int notification_tile_bg = 0x7f0200a5;
 
     @DrawableRes
-    public static final int pict1_poster = 0x7f0200a6;
+    public static final int notify_panel_notification_icon_bg = 0x7f0200a6;
 
     @DrawableRes
-    public static final int pict2_backdrops = 0x7f0200a7;
+    public static final int pict1_backdrops = 0x7f0200a7;
 
     @DrawableRes
-    public static final int pict2_poster = 0x7f0200a8;
+    public static final int pict1_poster = 0x7f0200a8;
 
     @DrawableRes
-    public static final int pict3_backdrops = 0x7f0200a9;
+    public static final int pict2_backdrops = 0x7f0200a9;
 
     @DrawableRes
-    public static final int pict3_poster = 0x7f0200aa;
+    public static final int pict2_poster = 0x7f0200aa;
 
     @DrawableRes
-    public static final int pict4_backdrops = 0x7f0200ab;
+    public static final int pict3_backdrops = 0x7f0200ab;
 
     @DrawableRes
-    public static final int pict4_poster = 0x7f0200ac;
+    public static final int pict3_poster = 0x7f0200ac;
 
     @DrawableRes
-    public static final int pict5_backdrops = 0x7f0200ad;
+    public static final int pict4_backdrops = 0x7f0200ad;
 
     @DrawableRes
-    public static final int pict5_poster = 0x7f0200ae;
+    public static final int pict4_poster = 0x7f0200ae;
 
     @DrawableRes
-    public static final int pict6_poster = 0x7f0200af;
+    public static final int pict5_backdrops = 0x7f0200af;
 
     @DrawableRes
-    public static final int poster_not_found = 0x7f0200b0;
+    public static final int pict5_poster = 0x7f0200b0;
+
+    @DrawableRes
+    public static final int pict6_poster = 0x7f0200b1;
+
+    @DrawableRes
+    public static final int poster_not_found = 0x7f0200b2;
   }
 
   public static final class id {
     @IdRes
-    public static final int action0 = 0x7f0d00c8;
+    public static final int action0 = 0x7f0d00d0;
 
     @IdRes
     public static final int action_bar = 0x7f0d0075;
@@ -2498,16 +2504,16 @@ public final class R2 {
     public static final int action_bar_title = 0x7f0d0052;
 
     @IdRes
-    public static final int action_container = 0x7f0d00c5;
+    public static final int action_container = 0x7f0d00cd;
 
     @IdRes
     public static final int action_context_bar = 0x7f0d0076;
 
     @IdRes
-    public static final int action_divider = 0x7f0d00cc;
+    public static final int action_divider = 0x7f0d00d4;
 
     @IdRes
-    public static final int action_image = 0x7f0d00c6;
+    public static final int action_image = 0x7f0d00ce;
 
     @IdRes
     public static final int action_menu_divider = 0x7f0d0002;
@@ -2525,10 +2531,10 @@ public final class R2 {
     public static final int action_mode_close_button = 0x7f0d0054;
 
     @IdRes
-    public static final int action_text = 0x7f0d00c7;
+    public static final int action_text = 0x7f0d00cf;
 
     @IdRes
-    public static final int actions = 0x7f0d00d5;
+    public static final int actions = 0x7f0d00dd;
 
     @IdRes
     public static final int activity_chooser_view_content = 0x7f0d0055;
@@ -2570,10 +2576,10 @@ public final class R2 {
     public static final int button_refresh_fragment_check_movie_today = 0x7f0d00a3;
 
     @IdRes
-    public static final int button_refresh_fragment_result_check_movie_today = 0x7f0d00bb;
+    public static final int button_refresh_fragment_result_check_movie_today = 0x7f0d00c3;
 
     @IdRes
-    public static final int cancel_action = 0x7f0d00c9;
+    public static final int cancel_action = 0x7f0d00d1;
 
     @IdRes
     public static final int center = 0x7f0d0032;
@@ -2591,7 +2597,7 @@ public final class R2 {
     public static final int checkbox = 0x7f0d006c;
 
     @IdRes
-    public static final int chronometer = 0x7f0d00d1;
+    public static final int chronometer = 0x7f0d00d9;
 
     @IdRes
     public static final int clip_horizontal = 0x7f0d003d;
@@ -2651,7 +2657,7 @@ public final class R2 {
     public static final int end = 0x7f0d0035;
 
     @IdRes
-    public static final int end_padder = 0x7f0d00db;
+    public static final int end_padder = 0x7f0d00e3;
 
     @IdRes
     public static final int enterAlways = 0x7f0d0024;
@@ -2696,7 +2702,7 @@ public final class R2 {
     public static final int icon = 0x7f0d005a;
 
     @IdRes
-    public static final int icon_group = 0x7f0d00d6;
+    public static final int icon_group = 0x7f0d00de;
 
     @IdRes
     public static final int icon_only = 0x7f0d004b;
@@ -2708,13 +2714,31 @@ public final class R2 {
     public static final int image = 0x7f0d0057;
 
     @IdRes
-    public static final int image_view_arrow_right_more_discover_movies_fragment_home = 0x7f0d00ad;
+    public static final int image_view_1_poster_discover_movie_fragment_home = 0x7f0d00b2;
 
     @IdRes
-    public static final int image_view_arrow_right_more_upcoming_movies_fragment_home = 0x7f0d00b2;
+    public static final int image_view_1_poster_upcoming_movie_fragment_home = 0x7f0d00ba;
 
     @IdRes
-    public static final int image_view_artist_fragment_home = 0x7f0d00a9;
+    public static final int image_view_2_poster_discover_movie_fragment_home = 0x7f0d00b3;
+
+    @IdRes
+    public static final int image_view_2_poster_upcoming_movie_fragment_home = 0x7f0d00bb;
+
+    @IdRes
+    public static final int image_view_3_poster_discover_movie_fragment_home = 0x7f0d00b4;
+
+    @IdRes
+    public static final int image_view_3_poster_upcoming_movie_fragment_home = 0x7f0d00bc;
+
+    @IdRes
+    public static final int image_view_arrow_right_more_discover_movies_fragment_home = 0x7f0d00af;
+
+    @IdRes
+    public static final int image_view_arrow_right_more_upcoming_movies_fragment_home = 0x7f0d00b7;
+
+    @IdRes
+    public static final int image_view_artist_fragment_home = 0x7f0d00aa;
 
     @IdRes
     public static final int image_view_background_activity_main = 0x7f0d0087;
@@ -2723,10 +2747,10 @@ public final class R2 {
     public static final int image_view_background_fragment_check_movie_today = 0x7f0d009d;
 
     @IdRes
-    public static final int image_view_background_fragment_result_check_movie_today = 0x7f0d00b5;
+    public static final int image_view_background_fragment_result_check_movie_today = 0x7f0d00bd;
 
     @IdRes
-    public static final int image_view_favorite_movie_item_content_fragment_result_check_movie_today = 0x7f0d00c2;
+    public static final int image_view_favorite_movie_item_content_fragment_result_check_movie_today = 0x7f0d00ca;
 
     @IdRes
     public static final int image_view_icon_app_activity_main = 0x7f0d0089;
@@ -2738,34 +2762,34 @@ public final class R2 {
     public static final int image_view_icon_search_fragment_home = 0x7f0d00a5;
 
     @IdRes
-    public static final int image_view_movie_name_fragment_home = 0x7f0d00aa;
+    public static final int image_view_movie_name_fragment_home = 0x7f0d00ac;
 
     @IdRes
     public static final int image_view_placeholder_artist_fragment_home = 0x7f0d00a7;
 
     @IdRes
-    public static final int image_view_poster_item_content_fragment_result_check_movie_today = 0x7f0d00c1;
+    public static final int image_view_poster_item_content_fragment_result_check_movie_today = 0x7f0d00c9;
 
     @IdRes
-    public static final int image_view_rate_movie_item_content_fragment_result_check_movie_today = 0x7f0d00c3;
+    public static final int image_view_rate_movie_item_content_fragment_result_check_movie_today = 0x7f0d00cb;
 
     @IdRes
-    public static final int image_view_slide_show_1 = 0x7f0d00bc;
+    public static final int image_view_slide_show_1 = 0x7f0d00c4;
 
     @IdRes
-    public static final int image_view_slide_show_2 = 0x7f0d00bd;
+    public static final int image_view_slide_show_2 = 0x7f0d00c5;
 
     @IdRes
-    public static final int image_view_slide_show_3 = 0x7f0d00be;
+    public static final int image_view_slide_show_3 = 0x7f0d00c6;
 
     @IdRes
-    public static final int image_view_slide_show_4 = 0x7f0d00bf;
+    public static final int image_view_slide_show_4 = 0x7f0d00c7;
 
     @IdRes
-    public static final int image_view_slide_show_5 = 0x7f0d00c0;
+    public static final int image_view_slide_show_5 = 0x7f0d00c8;
 
     @IdRes
-    public static final int info = 0x7f0d00d2;
+    public static final int info = 0x7f0d00da;
 
     @IdRes
     public static final int item_touch_helper_previous_elevation = 0x7f0d0006;
@@ -2780,16 +2804,16 @@ public final class R2 {
     public static final int light = 0x7f0d004f;
 
     @IdRes
-    public static final int line1 = 0x7f0d00d7;
+    public static final int line1 = 0x7f0d00df;
 
     @IdRes
-    public static final int line3 = 0x7f0d00d9;
+    public static final int line3 = 0x7f0d00e1;
 
     @IdRes
-    public static final int linear_layout_poster_discover_movies_fragment_home = 0x7f0d00af;
+    public static final int linear_layout_poster_discover_movies_fragment_home = 0x7f0d00b1;
 
     @IdRes
-    public static final int linear_layout_poster_upcoming_movies_fragment_home = 0x7f0d00b4;
+    public static final int linear_layout_poster_upcoming_movies_fragment_home = 0x7f0d00b9;
 
     @IdRes
     public static final int linear_layout_submenu_search_movie_fragment_home = 0x7f0d00a8;
@@ -2804,16 +2828,16 @@ public final class R2 {
     public static final int loading_indicator_view_fragment_check_movie_today = 0x7f0d00a1;
 
     @IdRes
-    public static final int loading_indicator_view_fragment_result_check_movie_today = 0x7f0d00b9;
+    public static final int loading_indicator_view_fragment_result_check_movie_today = 0x7f0d00c1;
 
     @IdRes
-    public static final int masked = 0x7f0d00dd;
+    public static final int masked = 0x7f0d00e5;
 
     @IdRes
-    public static final int media_actions = 0x7f0d00cb;
+    public static final int media_actions = 0x7f0d00d3;
 
     @IdRes
-    public static final int menu_item_about = 0x7f0d00de;
+    public static final int menu_item_about = 0x7f0d00e6;
 
     @IdRes
     public static final int middle = 0x7f0d0043;
@@ -2837,13 +2861,13 @@ public final class R2 {
     public static final int normal = 0x7f0d001c;
 
     @IdRes
-    public static final int notification_background = 0x7f0d00d3;
+    public static final int notification_background = 0x7f0d00db;
 
     @IdRes
-    public static final int notification_main_column = 0x7f0d00ce;
+    public static final int notification_main_column = 0x7f0d00d6;
 
     @IdRes
-    public static final int notification_main_column_container = 0x7f0d00cd;
+    public static final int notification_main_column_container = 0x7f0d00d5;
 
     @IdRes
     public static final int onAttachStateChangeListener = 0x7f0d0007;
@@ -2876,7 +2900,7 @@ public final class R2 {
     public static final int radio = 0x7f0d006e;
 
     @IdRes
-    public static final int recycler_view_content_fragment_result_check_movie_today = 0x7f0d00ba;
+    public static final int recycler_view_content_fragment_result_check_movie_today = 0x7f0d00c2;
 
     @IdRes
     public static final int recycler_view_nama_kota_fragment_check_movie_today = 0x7f0d00a2;
@@ -2885,28 +2909,34 @@ public final class R2 {
     public static final int relative_layout_activity_main = 0x7f0d0086;
 
     @IdRes
+    public static final int relative_layout_artist_fragment_home = 0x7f0d00a9;
+
+    @IdRes
     public static final int relative_layout_check_list_movie_today_fragment_home = 0x7f0d00a4;
 
     @IdRes
     public static final int relative_layout_footer_activity_main = 0x7f0d008a;
 
     @IdRes
-    public static final int relative_layout_header_discover_movies_fragment_home = 0x7f0d00ab;
+    public static final int relative_layout_header_discover_movies_fragment_home = 0x7f0d00ad;
 
     @IdRes
-    public static final int relative_layout_header_fragment_result_check_movie_today = 0x7f0d00b6;
+    public static final int relative_layout_header_fragment_result_check_movie_today = 0x7f0d00be;
 
     @IdRes
-    public static final int relative_layout_header_upcoming_movies_fragment_home = 0x7f0d00b0;
+    public static final int relative_layout_header_upcoming_movies_fragment_home = 0x7f0d00b5;
+
+    @IdRes
+    public static final int relative_layout_movie_name_fragment_home = 0x7f0d00ab;
 
     @IdRes
     public static final int right = 0x7f0d0038;
 
     @IdRes
-    public static final int right_icon = 0x7f0d00d4;
+    public static final int right_icon = 0x7f0d00dc;
 
     @IdRes
-    public static final int right_side = 0x7f0d00cf;
+    public static final int right_side = 0x7f0d00d7;
 
     @IdRes
     public static final int screen = 0x7f0d002b;
@@ -3011,7 +3041,7 @@ public final class R2 {
     public static final int start = 0x7f0d0039;
 
     @IdRes
-    public static final int status_bar_latest_event_content = 0x7f0d00ca;
+    public static final int status_bar_latest_event_content = 0x7f0d00d2;
 
     @IdRes
     public static final int submenuarrow = 0x7f0d006f;
@@ -3026,10 +3056,10 @@ public final class R2 {
     public static final int tab_layout_menu_activity_main = 0x7f0d008f;
 
     @IdRes
-    public static final int text = 0x7f0d00da;
+    public static final int text = 0x7f0d00e2;
 
     @IdRes
-    public static final int text2 = 0x7f0d00d8;
+    public static final int text2 = 0x7f0d00e0;
 
     @IdRes
     public static final int textSpacerNoButtons = 0x7f0d0063;
@@ -3047,16 +3077,16 @@ public final class R2 {
     public static final int text_view_do_you = 0x7f0d008b;
 
     @IdRes
-    public static final int text_view_more_discover_movies_fragment_home = 0x7f0d00ae;
+    public static final int text_view_more_discover_movies_fragment_home = 0x7f0d00b0;
 
     @IdRes
-    public static final int text_view_more_upcoming_movies_fragment_home = 0x7f0d00b3;
+    public static final int text_view_more_upcoming_movies_fragment_home = 0x7f0d00b8;
 
     @IdRes
-    public static final int text_view_nama_kota_fragment_result_check_movie_today = 0x7f0d00b7;
+    public static final int text_view_nama_kota_fragment_result_check_movie_today = 0x7f0d00bf;
 
     @IdRes
-    public static final int text_view_nama_kota_item_nama_kota_activity_check_movie_today = 0x7f0d00c4;
+    public static final int text_view_nama_kota_item_nama_kota_activity_check_movie_today = 0x7f0d00cc;
 
     @IdRes
     public static final int text_view_or = 0x7f0d008c;
@@ -3068,7 +3098,7 @@ public final class R2 {
     public static final int text_view_sign_up = 0x7f0d008e;
 
     @IdRes
-    public static final int text_view_tanggal_fragment_result_check_movie_today = 0x7f0d00b8;
+    public static final int text_view_tanggal_fragment_result_check_movie_today = 0x7f0d00c0;
 
     @IdRes
     public static final int textinput_counter = 0x7f0d000d;
@@ -3077,7 +3107,7 @@ public final class R2 {
     public static final int textinput_error = 0x7f0d000e;
 
     @IdRes
-    public static final int time = 0x7f0d00d0;
+    public static final int time = 0x7f0d00d8;
 
     @IdRes
     public static final int title = 0x7f0d005b;
@@ -3116,10 +3146,10 @@ public final class R2 {
     public static final int useLogo = 0x7f0d0023;
 
     @IdRes
-    public static final int view_line_vertical_discover_movies_fragment_home = 0x7f0d00ac;
+    public static final int view_line_vertical_discover_movies_fragment_home = 0x7f0d00ae;
 
     @IdRes
-    public static final int view_line_vertical_upcoming_movies_fragment_home = 0x7f0d00b1;
+    public static final int view_line_vertical_upcoming_movies_fragment_home = 0x7f0d00b6;
 
     @IdRes
     public static final int view_offset_helper = 0x7f0d0012;
@@ -3131,7 +3161,7 @@ public final class R2 {
     public static final int view_pager_slide_show_fragment_home = 0x7f0d00a6;
 
     @IdRes
-    public static final int visible = 0x7f0d00dc;
+    public static final int visible = 0x7f0d00e4;
 
     @IdRes
     public static final int wide = 0x7f0d004d;

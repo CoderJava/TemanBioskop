@@ -14,4 +14,5 @@ public interface HomeFragmentView extends View {
 
     void onSetTimerTask();
 
+    void onLoadDataDiscover();
 }

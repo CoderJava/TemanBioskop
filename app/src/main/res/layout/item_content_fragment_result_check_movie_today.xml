@@ -48,6 +48,7 @@
             android:layout_below="@+id/image_view_poster_item_content_fragment_result_check_movie_today"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
             >
 
             <ImageView

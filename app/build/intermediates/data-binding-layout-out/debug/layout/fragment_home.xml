@@ -65,7 +65,7 @@
 
                 </RelativeLayout>
 
-                <!-- Carousel View Pager (On Progress) -->
+                <!-- Carousel View Pager -->
                 <android.support.v4.view.ViewPager
                     android:id="@+id/view_pager_slide_show_fragment_home"
                     android:layout_width="match_parent"
@@ -120,6 +120,7 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:id="@+id/relative_layout_artist_fragment_home"
                         android:layout_weight="1">
 
                         <ImageView
@@ -158,6 +159,7 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:id="@+id/relative_layout_movie_name_fragment_home"
                         android:layout_weight="1">
 
                         <ImageView
@@ -243,29 +245,32 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="130dp"
+                        android:id="@+id/image_view_1_poster_discover_movie_fragment_home"
                         android:layout_weight="1"
                         android:paddingStart="0dp"
                         android:paddingEnd="8dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/pict1_poster" />
+                        android:src="@drawable/image_coming_soon" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="130dp"
+                        android:id="@+id/image_view_2_poster_discover_movie_fragment_home"
                         android:layout_weight="1"
                         android:paddingStart="4dp"
                         android:paddingEnd="4dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/pict2_poster" />
+                        android:src="@drawable/image_coming_soon" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="130dp"
+                        android:id="@+id/image_view_3_poster_discover_movie_fragment_home"
                         android:layout_weight="1"
                         android:paddingStart="8dp"
                         android:paddingEnd="0dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/pict3_poster" />
+                        android:src="@drawable/image_coming_soon" />
 
                 </LinearLayout>
 
@@ -332,6 +337,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="130dp"
+                        android:id="@+id/image_view_1_poster_upcoming_movie_fragment_home"
                         android:layout_weight="1"
                         android:paddingStart="0dp"
                         android:paddingEnd="8dp"
@@ -342,6 +348,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="130dp"
+                        android:id="@+id/image_view_2_poster_upcoming_movie_fragment_home"
                         android:layout_weight="1"
                         android:paddingStart="4dp"
                         android:paddingEnd="4dp"
@@ -352,6 +359,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="130dp"
+                        android:id="@+id/image_view_3_poster_upcoming_movie_fragment_home"
                         android:layout_weight="1"
                         android:paddingStart="8dp"
                         android:paddingEnd="0dp"
