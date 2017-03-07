@@ -33,6 +33,7 @@
             </intent-filter>
         </activity>
         <activity android:name="ysn.temanbioskop.views.submenu.home.check.movie.today.CheckMovieTodayActivity" />
+        <activity android:name="ysn.temanbioskop.views.submenu.home.detail.movie.discover.DetailMovieDiscoverActivity" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

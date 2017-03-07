@@ -8,7 +8,7 @@ import ysn.temanbioskop.views.base.Presenter;
 
 public class HomeFragmentPresenter implements Presenter<HomeFragmentView> {
 
-    HomeFragmentView homeFragmentView;
+    private HomeFragmentView homeFragmentView;
 
     @Override
     public void onAttach(HomeFragmentView view) {

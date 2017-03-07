@@ -14,7 +14,8 @@ import ysn.temanbioskop.internal.model.bioskop.moviedb.upcoming.UpcomingMovieDb;
 public interface MovieDbApiService {
 
     public final String baseApiUrl = "https://api.themoviedb.org/3/";
-    public final String baseImageUrl = "https://image.tmdb.org/t/p/w500";
+    public final String baseImageUrl500 = "https://image.tmdb.org/t/p/w500";
+    public final String baseImageUrl600 = "https://image.tmdb.org/t/p/w600";
     public final String apiKey = "fe71629f457c2466875babf7fbe5bb6c";
 
     /*http://api.themoviedb.org/3/search/movie?api_key=fe71629f457c2466875babf7fbe5bb6c&query=*/

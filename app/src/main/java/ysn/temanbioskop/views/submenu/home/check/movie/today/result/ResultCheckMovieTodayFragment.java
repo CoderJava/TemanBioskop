@@ -166,7 +166,7 @@ public class ResultCheckMovieTodayFragment extends Fragment implements ResultChe
                     Log.d(TAG, "searchMovieDb: " + searchMovieDb);
                     if (searchMovieDb.getResults().size() > 0) {
                         String posterPath = searchMovieDb.getResults().get(0).getPosterPath();
-                        dataJadwal.getData().get(b).setPoster(MovieDbApiService.baseImageUrl + "" + posterPath);
+                        dataJadwal.getData().get(b).setPoster(MovieDbApiService.baseImageUrl500 + "" + posterPath);
                         Log.d(TAG, "posterNew");
                     } else {
                         dataJadwal.getData().get(b).setPoster("-");
@@ -196,7 +196,7 @@ public class ResultCheckMovieTodayFragment extends Fragment implements ResultChe
     public void onSetBackgroundBlur() {
         Drawable drawable = getResources().getDrawable(R.drawable.background_home);
         Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
-        Bitmap blurBuilder = BlurBuilder.blur(getContext(), bitmap);
+        Bitmap blurBuilder = BlurBuilder.blur(getContext(), bitmap, 0.3f);
         imageViewFragmentResultCheckMovieToday.setImageBitmap(blurBuilder);
     }
 

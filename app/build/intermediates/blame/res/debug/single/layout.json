@@ -104,6 +104,10 @@
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/layout/item_nama_kota_activity_check_movie_today.xml"
     },
     {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/layout/activity_detail_movie_discover.xml",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/layout/activity_detail_movie_discover.xml"
+    },
+    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_alert_dialog_material.xml"
     },

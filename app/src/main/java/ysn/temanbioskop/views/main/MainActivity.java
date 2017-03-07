@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityView 
     public void onSetBackgroundBlur() {
         Drawable drawable = getResources().getDrawable(R.drawable.background_home);
         Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
-        Bitmap blurBuilder = BlurBuilder.blur(this, bitmap);
+        Bitmap blurBuilder = BlurBuilder.blur(this, bitmap, 0.3f);
         imageViewBackgroundActivityMain.setImageBitmap(blurBuilder);
     }
 }

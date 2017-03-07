@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:2:1-23:12
+ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:2:1-24:12
 	package
 		ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:3:5-31
 		INJECTED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml
@@ -21,7 +21,7 @@ MERGED from [com.google.firebase:firebase-iid:9.0.0] /home/yudi/AndroidStudioPro
 	android:name
 		ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:7:5-21:19
+ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:7:5-22:19
 MERGED from [com.google.firebase:firebase-core:9.0.0] /home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.google.firebase/firebase-core/9.0.0/AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-analytics:9.0.0] /home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.0/AndroidManifest.xml:26:5-41:19
 MERGED from [com.google.firebase:firebase-analytics-impl:9.0.0] /home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.0/AndroidManifest.xml:26:5-41:19
@@ -67,9 +67,13 @@ ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidMan
 	android:name
 		ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:17:27-74
 activity#ysn.temanbioskop.views.submenu.home.check.movie.today.CheckMovieTodayActivity
-ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:20:9-107
+ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:20:9-98
 	android:name
 		ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:20:19-95
+activity#ysn.temanbioskop.views.submenu.home.detail.movie.discover.DetailMovieDiscoverActivity
+ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:21:9-115
+	android:name
+		ADDED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml:21:19-103
 uses-sdk
 INJECTED from /home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.google.firebase:firebase-core:9.0.0] /home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.google.firebase/firebase-core/9.0.0/AndroidManifest.xml:4:5-42

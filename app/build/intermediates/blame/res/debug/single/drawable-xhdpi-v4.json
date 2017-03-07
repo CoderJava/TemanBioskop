@@ -180,12 +180,12 @@
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable-xhdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_icon_light_normal.9.png",
-        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/drawable-xhdpi-v4/common_plus_signin_btn_icon_light_normal.9.png"
-    },
-    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_focused.9.png",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_icon_light_normal.9.png",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/drawable-xhdpi-v4/common_plus_signin_btn_icon_light_normal.9.png"
     },
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal.9.png",
@@ -272,12 +272,12 @@
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/drawable-xhdpi-v4/common_plus_signin_btn_icon_dark_disabled.9.png"
     },
     {
-        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_dark_pressed.9.png",
-        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_pressed.9.png"
-    },
-    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_text_light_focused.9.png",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/drawable-xhdpi-v4/common_plus_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_dark_pressed.9.png",
+        "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_pressed.9.png"
     },
     {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png",

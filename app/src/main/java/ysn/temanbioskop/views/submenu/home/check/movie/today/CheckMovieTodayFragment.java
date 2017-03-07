@@ -140,7 +140,7 @@ public class CheckMovieTodayFragment extends Fragment implements CheckMovieToday
     public void onSetBackgroundBlur() {
         Drawable drawable = getResources().getDrawable(R.drawable.background_home);
         Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
-        Bitmap blurBuilder = BlurBuilder.blur(getActivity(), bitmap);
+        Bitmap blurBuilder = BlurBuilder.blur(getActivity(), bitmap, 0.3f);
         imageViewBackgroundFragmentCheckMovieToday.setImageBitmap(blurBuilder);
     }
 

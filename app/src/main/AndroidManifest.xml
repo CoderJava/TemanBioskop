@@ -17,7 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".views.submenu.home.check.movie.today.CheckMovieTodayActivity"></activity>
+        <activity android:name=".views.submenu.home.check.movie.today.CheckMovieTodayActivity" />
+        <activity android:name=".views.submenu.home.detail.movie.discover.DetailMovieDiscoverActivity"></activity>
     </application>
 
 </manifest>

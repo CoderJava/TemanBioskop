@@ -7,6 +7,8 @@ class DataBinderMapper {
     }
     public android.databinding.ViewDataBinding getDataBinder(android.databinding.DataBindingComponent bindingComponent, android.view.View view, int layoutId) {
         switch(layoutId) {
+                case ysn.temanbioskop.R.layout.activity_detail_movie_discover:
+                    return ysn.temanbioskop.databinding.ActivityDetailMovieDiscoverBinding.bind(view, bindingComponent);
                 case ysn.temanbioskop.R.layout.activity_main:
                     return ysn.temanbioskop.databinding.ActivityMainBinding.bind(view, bindingComponent);
                 case ysn.temanbioskop.R.layout.fragment_check_movie_today:
@@ -31,6 +33,12 @@ class DataBinderMapper {
         }
         final int code = tag.hashCode();
         switch(code) {
+            case -1883353844: {
+                if(tag.equals("layout/activity_detail_movie_discover_0")) {
+                    return ysn.temanbioskop.R.layout.activity_detail_movie_discover;
+                }
+                break;
+            }
             case 423753077: {
                 if(tag.equals("layout/activity_main_0")) {
                     return ysn.temanbioskop.R.layout.activity_main;
