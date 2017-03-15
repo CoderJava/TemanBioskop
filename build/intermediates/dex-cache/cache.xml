@@ -156,6 +156,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/io.reactivex/rxandroid/1.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
+        <dex dex="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/pre-dexed/debug/io.reactivex-rxandroid-1.2.1_f3bbd2a20d5391f58d7a837022d32f0b2e161891.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -180,6 +189,15 @@
         revision="25.0.1"
         sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
         <dex dex="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.1.0_f641a204586a00639166506fe835d6dd5e6d2c23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.2.7/138872ff3173fb7bee8b1d6303d6edb57d76599/rxjava-1.2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0138872ff3173fb7bee8b1d6303d6edb57d76599">
+        <dex dex="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/pre-dexed/debug/rxjava-1.2.7_6f3bee03468eee324127f8d6c75600c275665649.jar" />
     </item>
     <item
         is-multidex="false"
@@ -279,6 +297,15 @@
         revision="25.0.1"
         sha1="662d7533b25a666c649c10a16b42edfb95f25a4f">
         <dex dex="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/pre-dexed/debug/com.android.support.constraint-constraint-layout-1.0.0-beta4_e1a6357f7a114171d5919fa920eab580c4f677cc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/479c1e06db31c432330183f5cae684163f186146/javax.annotation-api-1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="479c1e06db31c432330183f5cae684163f186146">
+        <dex dex="/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/pre-dexed/debug/javax.annotation-api-1.2_1e007753630aecd4d112f47539a0741fb9ce1439.jar" />
     </item>
     <item
         is-multidex="false"

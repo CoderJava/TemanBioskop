@@ -17,11 +17,8 @@ import android.widget.RelativeLayout;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.load.resource.drawable.GlideDrawable;
-import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
-import com.bumptech.glide.request.target.Target;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -44,6 +41,7 @@ import ysn.temanbioskop.internal.model.bioskop.moviedb.discover.DiscoverMovieDb;
 import ysn.temanbioskop.internal.model.bioskop.moviedb.upcoming.UpcomingMovieDb;
 import ysn.temanbioskop.views.submenu.home.check.movie.today.CheckMovieTodayActivity;
 import ysn.temanbioskop.views.submenu.home.detail.movie.discover.DetailMovieDiscoverActivity;
+import ysn.temanbioskop.views.submenu.home.detail.movie.upcoming.DetailMovieUpcomingActivity;
 import ysn.temanbioskop.views.submenu.home.slideshow.adapter.SlideShowFragmentPagerAdapter;
 
 /**
@@ -78,11 +76,20 @@ public class HomeFragment extends Fragment implements HomeFragmentView {
     private Timer timer;
     private Retrofit retrofit;
     private int page = 0;
+    private DiscoverMovieDb discoverMovieDb;
+    private UpcomingMovieDb upcomingMovieDb;
+    private int idMovieDiscover1 = 0;
+    private int idMovieDiscover2 = 0;
+    private int idMovieDiscover3 = 0;
     private Bitmap bitmap1PosterDiscoverMovie;
     private Bitmap bitmap2PosterDiscoverMovie;
     private Bitmap bitmap3PosterDiscoverMovie;
-    private DiscoverMovieDb discoverMovieDb;
-    private UpcomingMovieDb upcomingMovieDb;
+    private int idMovieUpcoming1;
+    private int idMovieUpcoming2;
+    private int idMovieUpcoming3;
+    private Bitmap bitmap1PosterUpcoming;
+    private Bitmap bitmap2PosterUpcoming;
+    private Bitmap bitmap3PosterUpcoming;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -118,7 +125,10 @@ public class HomeFragment extends Fragment implements HomeFragmentView {
             R.id.relative_layout_check_list_movie_today_fragment_home,
             R.id.image_view_1_poster_discover_movie_fragment_home,
             R.id.image_view_2_poster_discover_movie_fragment_home,
-            R.id.image_view_3_poster_discover_movie_fragment_home
+            R.id.image_view_3_poster_discover_movie_fragment_home,
+            R.id.image_view_1_poster_upcoming_movie_fragment_home,
+            R.id.image_view_2_poster_upcoming_movie_fragment_home,
+            R.id.image_view_3_poster_upcoming_movie_fragment_home
     })
     public void onClick(View view) {
         switch (view.getId()) {
@@ -128,21 +138,51 @@ public class HomeFragment extends Fragment implements HomeFragmentView {
                 getActivity().overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
                 break;
             case R.id.image_view_1_poster_discover_movie_fragment_home:
-                if (bitmap1PosterDiscoverMovie != null) {
+                if (idMovieDiscover1 != 0 && bitmap1PosterDiscoverMovie != null) {
                     EventBus.getDefault().postSticky(bitmap1PosterDiscoverMovie);
-                    startActivity(new Intent(getActivity(), DetailMovieDiscoverActivity.class));
+                    intent = new Intent(getActivity(), DetailMovieDiscoverActivity.class);
+                    intent.putExtra("movieId", idMovieDiscover1);
+                    startActivity(intent);
                 }
                 break;
             case R.id.image_view_2_poster_discover_movie_fragment_home:
-                if(bitmap2PosterDiscoverMovie != null) {
+                if(idMovieDiscover2 != 0 && bitmap2PosterDiscoverMovie != null) {
                     EventBus.getDefault().postSticky(bitmap2PosterDiscoverMovie);
-                    startActivity(new Intent(getActivity(), DetailMovieDiscoverActivity.class));
+                    intent = new Intent(getActivity(), DetailMovieDiscoverActivity.class);
+                    intent.putExtra("movieId", idMovieDiscover2);
+                    startActivity(intent);
                 }
                 break;
             case R.id.image_view_3_poster_discover_movie_fragment_home:
-                if(bitmap3PosterDiscoverMovie != null) {
+                if(idMovieDiscover3 != 0 && bitmap3PosterDiscoverMovie != null) {
                     EventBus.getDefault().postSticky(bitmap3PosterDiscoverMovie);
-                    startActivity(new Intent(getActivity(), DetailMovieDiscoverActivity.class));
+                    intent = new Intent(getActivity(), DetailMovieDiscoverActivity.class);
+                    intent.putExtra("movieId", idMovieDiscover3);
+                    startActivity(intent);
+                }
+                break;
+            case R.id.image_view_1_poster_upcoming_movie_fragment_home:
+                if (idMovieUpcoming1 != 0 && bitmap1PosterUpcoming != null) {
+                    EventBus.getDefault().postSticky(bitmap1PosterUpcoming);
+                    intent = new Intent(getActivity(), DetailMovieUpcomingActivity.class);
+                    intent.putExtra("movieId", idMovieUpcoming1);
+                    startActivity(intent);
+                }
+                break;
+            case R.id.image_view_2_poster_upcoming_movie_fragment_home:
+                if (idMovieUpcoming2 != 0 && bitmap2PosterUpcoming != null) {
+                    EventBus.getDefault().postSticky(bitmap2PosterUpcoming);
+                    intent = new Intent(getActivity(), DetailMovieUpcomingActivity.class);
+                    intent.putExtra("movieId", idMovieUpcoming2);
+                    startActivity(intent);
+                }
+                break;
+            case R.id.image_view_3_poster_upcoming_movie_fragment_home:
+                if (idMovieUpcoming3 != 0 && bitmap3PosterUpcoming != null) {
+                    EventBus.getDefault().postSticky(bitmap3PosterUpcoming);
+                    intent = new Intent(getActivity(), DetailMovieUpcomingActivity.class);
+                    intent.putExtra("movieId", idMovieUpcoming3);
+                    startActivity(intent);
                 }
                 break;
         }
@@ -209,12 +249,15 @@ public class HomeFragment extends Fragment implements HomeFragmentView {
     public void onLoadDataDiscoverMovies() {
         initRetrofit(MovieDbApiService.baseApiUrl);
         MovieDbApiService movieDbApiService = retrofit.create(MovieDbApiService.class);
-        Call<DiscoverMovieDb> resultCallDiscoverMovie = movieDbApiService.getDiscoverMovie(MovieDbApiService.apiKey, "id", "1");
+        final Call<DiscoverMovieDb> resultCallDiscoverMovie = movieDbApiService.getDiscoverMovie(MovieDbApiService.apiKey, "id", "1");
         resultCallDiscoverMovie.enqueue(new Callback<DiscoverMovieDb>() {
             @Override
             public void onResponse(Call<DiscoverMovieDb> call, Response<DiscoverMovieDb> response) {
                 discoverMovieDb = response.body();
                 final List<ysn.temanbioskop.internal.model.bioskop.moviedb.discover.Result> listResult = discoverMovieDb.getResults();
+                idMovieDiscover1 = listResult.get(0).getId();
+                idMovieDiscover2 = listResult.get(1).getId();
+                idMovieDiscover3 = listResult.get(2).getId();
 
                 //  image view 1 discover movie
                 String posterPath = MovieDbApiService.baseImageUrl600 + "" + listResult.get(0).getPosterPath();
@@ -301,7 +344,17 @@ public class HomeFragment extends Fragment implements HomeFragmentView {
                 List<ysn.temanbioskop.internal.model.bioskop.moviedb.upcoming.Result> listResult = upcomingMovieDb.getResults();
                 String posterPath;
                 if (listResult.size() >= 1) {
-                    posterPath = MovieDbApiService.baseImageUrl500 + "" + listResult.get(0).getPosterPath();
+                    posterPath = MovieDbApiService.baseImageUrl600 + "" + listResult.get(0).getPosterPath();
+                    idMovieUpcoming1 = listResult.get(0).getId();
+                    Glide.with(fragmentActivity)
+                            .load(posterPath)
+                            .asBitmap()
+                            .into(new SimpleTarget<Bitmap>() {
+                                @Override
+                                public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
+                                    bitmap1PosterUpcoming = resource;
+                                }
+                            });
                     Glide.with(fragmentActivity)
                             .load(posterPath)
                             .placeholder(R.drawable.image_coming_soon)
@@ -313,7 +366,17 @@ public class HomeFragment extends Fragment implements HomeFragmentView {
                 }
 
                 if (listResult.size() >= 2) {
-                    posterPath = MovieDbApiService.baseImageUrl500 + "" + listResult.get(1).getPosterPath();
+                    posterPath = MovieDbApiService.baseImageUrl600 + "" + listResult.get(1).getPosterPath();
+                    idMovieUpcoming2 = listResult.get(1).getId();
+                    Glide.with(fragmentActivity)
+                            .load(posterPath)
+                            .asBitmap()
+                            .into(new SimpleTarget<Bitmap>() {
+                                @Override
+                                public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
+                                    bitmap2PosterUpcoming = resource;
+                                }
+                            });
                     Glide.with(fragmentActivity)
                             .load(posterPath)
                             .placeholder(R.drawable.image_coming_soon)
@@ -324,7 +387,17 @@ public class HomeFragment extends Fragment implements HomeFragmentView {
                 }
 
                 if (listResult.size() >= 3) {
-                    posterPath = MovieDbApiService.baseImageUrl500 + "" + listResult.get(2).getPosterPath();
+                    posterPath = MovieDbApiService.baseImageUrl600 + "" + listResult.get(2).getPosterPath();
+                    idMovieUpcoming3 = listResult.get(2).getId();
+                    Glide.with(fragmentActivity)
+                            .load(posterPath)
+                            .asBitmap()
+                            .into(new SimpleTarget<Bitmap>() {
+                                @Override
+                                public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
+                                    bitmap3PosterUpcoming = resource;
+                                }
+                            });
                     Glide.with(fragmentActivity)
                             .load(posterPath)
                             .placeholder(R.drawable.image_coming_soon)

@@ -35,7 +35,7 @@ public class BlurBuilder {
         return outputBitmap;
     }
 
-    public static Bitmap blurRenderScript(Bitmap smallBitmap, int radius, Context context) {
+    public static Bitmap blurRenderScript(Bitmap smallBitmap, int radius, Context context, int heightContainer) {
 
         try {
             smallBitmap = RGB565toARGB888(smallBitmap);
@@ -45,7 +45,7 @@ public class BlurBuilder {
 
 
         Bitmap bitmap = Bitmap.createBitmap(
-                smallBitmap.getWidth(), smallBitmap.getHeight(),
+                smallBitmap.getWidth(), heightContainer,
                 Bitmap.Config.ARGB_8888);
 
         RenderScript renderScript = RenderScript.create(context);
