@@ -1,16 +1,23 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.google.gms.google-services'
-apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "26.0.1"
+    compileSdkVersion 27
+    dataBinding {
+        enabled true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
     defaultConfig {
-        applicationId "ysn.temanbioskop"
-        minSdkVersion 17
-        targetSdkVersion 25
-        versionCode 3
-        versionName "1.0.2"
+        applicationId "com.ysn.temanbioskop"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "3.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -19,34 +26,46 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    dataBinding {
-        enabled true
-    }
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    /*compile 'me.wangyuwei:LoadingiVew:1.0.5'*/
-    /*compile 'com.android.support:cardview-v7:25.0.1'*/
-    /*compile 'com.squareup.picasso:picasso:2.4.0'*/
-    compile 'com.android.support:appcompat-v7:25.1.0'
-    compile 'com.android.support:design:25.1.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
-    compile 'com.jakewharton:butterknife:8.5.1'
-    compile 'com.jakewharton:butterknife-compiler:8.5.1'
-    compile 'com.squareup.retrofit2:retrofit:2.1.0'
-    compile 'com.google.code.gson:gson:2.8.0'
-    compile 'com.squareup.retrofit2:retrofit-converters:2.1.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
-    compile 'com.android.support:support-v4:25.1.0'
-    compile 'com.wang.avi:library:2.1.3'
-    compile 'org.greenrobot:eventbus:3.0.0'
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'io.reactivex:rxjava:1.2.7'
-    compile 'io.reactivex:rxandroid:1.2.1'
-    compile 'javax.annotation:javax.annotation-api:1.2'
-    testCompile 'junit:junit:4.12'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation "com.android.support:appcompat-v7:$android_support_version"
+    testImplementation "junit:junit:4.12"
+    androidTestImplementation "com.android.support.test:runner:1.0.2"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:3.0.2"
+
+    /* Support design */
+    implementation "com.android.support:design:$android_support_version"
+
+    /* RecyclerView */
+    implementation "com.android.support:recyclerview-v7:$android_support_version"
+
+    /* ConstraintLayout */
+    implementation "com.android.support.constraint:constraint-layout:1.1.2"
+
+    /* LiveData & ViewModel */
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+
+    /* Room */
+    implementation "android.arch.persistence.room:runtime:$room_version"
+    kapt "android.arch.persistence.room:compiler:$room_version"
+
+    /* Data binding */
+    annotationProcessor "com.android.databinding:compiler:3.1.4"
+
+    /* Retrofit */
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofit_version"
+
+    /* Dagger2 */
+    implementation "com.google.dagger:dagger:$dagger2_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger2_version"
+    compileOnly "org.glassfish:javax.annotation:3.1.1"
+
+    /* Rx */
+    implementation "io.reactivex.rxjava2:rxjava:2.1.15"
+    implementation "io.reactivex.rxjava2:rxandroid:2.0.2"
 }
