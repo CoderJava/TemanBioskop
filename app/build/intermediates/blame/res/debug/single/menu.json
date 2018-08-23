@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/yudisetiawan/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/menu/menu_home.xml",
+        "source": "/Users/yudisetiawan/AndroidStudioProjects/TemanBioskop/app/src/main/res/menu/menu_home.xml"
+    },
+    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/menu/menu_home.xml",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/menu/menu_home.xml"
     }

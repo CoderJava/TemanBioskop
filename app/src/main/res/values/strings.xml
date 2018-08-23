@@ -1,12 +1,3 @@
 <resources>
     <string name="app_name">Teman Bioskop</string>
-    <string name="app_name2">TemanBioskop</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="popular_movie_fragment">Popular Movie Fragment</string>
-    <string name="favorite_movie_fragment">Favorite Movie Fragment</string>
-    <string name="home_fragment">Home Fragment</string>
-    <string name="str_internet_problem">Your connection is problem. Please try again!</string>
-    <string name="refresh">Refresh</string>
 </resources>

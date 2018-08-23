@@ -4,6 +4,14 @@
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/mipmap-xxhdpi/ic_launcher2.png"
     },
     {
+        "merged": "/Users/yudisetiawan/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/Users/yudisetiawan/AndroidStudioProjects/TemanBioskop/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/yudisetiawan/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher2.png",
+        "source": "/Users/yudisetiawan/AndroidStudioProjects/TemanBioskop/app/src/main/res/mipmap-xxhdpi/ic_launcher2.png"
+    },
+    {
         "merged": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
         "source": "/home/yudi/AndroidStudioProjects/TemanBioskop/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     }
